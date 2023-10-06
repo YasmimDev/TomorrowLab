@@ -1,24 +1,49 @@
 <!doctype html>
-<html>
+<html lang=pt-br>
     <head>
         <title>TomorrowLab - Cadastro de Startup</title>
         <link rel=stylesheet href=styles.css>
+        <meta author="Luiz Augusto">
     </head>
     <body>
         <section id="menu">
           <nav class=nav-bar>
             <a id=tomorrow-logo href="https://www.tomorrowlab.studio/index.html"><img id=tomorrow-logo src="logo-tomorrow2x.png"></a>
-            <a class=links href="https://www.tomorrowlab.studio/">PORTFÓLIO</a>
-            <a class=links href="https://www.tomorrowlab.studio/index.html">HOME</a>
+            <a class=link href="https://www.tomorrowlab.studio/">PORTFÓLIO</a>
+            <a class=link href="https://www.tomorrowlab.studio/index.html">HOME</a>
           </nav>
         </section>
         <section id=cad_startup>
-            <form method="get">
-                <div class=inputs>
-                    <t>Nome da startup: <input type="" name="startup"></t><br>
-                    <input type="password" name="senha"><br>
-                    <input type="number" name="cep"><br>
-                </div>
+            <h1>Cadastre sua Startup</h1>
+            <form method=get>
+                <div id=esquerdo>
+                    <t>Nome da startup:</t><br><input class=inputs type="input" name="startup"><br>
+                    <t>Descrição:</t><br><textarea rows=9 cols=40 name="descricao"></textarea>
+                    <br><t>Setor:</t><br>
+                        <input type="checkbox" name="setor">Tecnologia
+                        <input id=centro type="checkbox" name="setor">Saúde<br>
+                        <input type="checkbox" name="setor">Fintech
+                        <input class=centro type="checkbox" name="setor">Educação<br>
+                        <input type="checkbox" name="setor">Energia
+                        <input class=centro type="checkbox" name="setor">Alimentos e Agricultura<br>
+                        <input type="checkbox" name="setor">E-commerce
+                        <input type="checkbox" name="setor">Transporte e Mobilidade<br>
+                    <br><t>Outros</t><br><input class=inputs type="input" name="startup"></div>
+                <div id=direito>
+                    <t>Website:</t><br><input class=inputs type="input" name="website"><br>
+                    <t>Email:</t><br><input class=inputs type="input" name="email"><br>
+                    <t>Telefone:</t><br><input class=inputs type="number" name="telefone"><br>
+                    <t>Possui endereço físico:</t><br>
+                    <input class=box2 type="radio" name="endereco">Sim
+                    <input class=box2 type="radio" name="endereco">Não<br>
+                    <t>Estado:<br><input class=inputs type="input" name="estado"></t><br>
+                    <t>Cidade<br><input class=inputs type="input" name="cidade"></t><br>
+                    <t>Bairro:<br><input class=inputs type="input" name="bairro"></t><br>
+                    <t>Rua:<br><input class=inputs type="input" name="rua"></t><br>
+                    <t>CEP:<br><input class=inputs type="number" name="cep"></t><br></div>
+                <div id=abaixo>
+                    <input class=funct type=submit>
+                    <input class=funct type=reset></div>
             </form>
         </section>
     </body>
