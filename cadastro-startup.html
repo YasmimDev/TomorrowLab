@@ -3,27 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-        <meta refresh=50>
+        <meta http-equiv="refresh" content="50">
 
         <title>TomorrowLab - Cadastro de Startup</title>
         <link rel=stylesheet href=startup-styles.css>
+        <script type="text/javascript" src="adicionarFundador.js"></script>
     </head>
     <body>
-        <section id="id-menu">
-          <nav class=id-menu__c-nav-bar>
-            <a class=c-nav-bar__c-tomorrow-logo href="#"><img id=c-nav-bar__c-tomorrow-logo src="logo-tomorrow2x.png"></a>
-            <a class=c-nav-bar__c-link href="#"><h1>PORTFÓLIO</h1></a>
-            <a class=c-nav-bar__c-link href="#"><h1>HOME</h1></a>
-          </nav>
-        </ul>
-        <section id=id-cad-startup>
+        <div class="c-menu">
+            <nav class=c-menu__c-nav-bar>
+                <a class=c-nav-bar__c-tomorrow-logo href="#"><img id=c-nav-bar__c-tomorrow-logo src="img/logo-tomorrow2x.png"></a>
+                <a class=c-nav-bar__c-link href="#"><h1>PORTFÓLIO</h1></a>
+                <a class=c-nav-bar__c-link href="#"><h1>HOME</h1></a>
+            </nav>
+        </div>
+        <div class=c-cad-startup>
             <h2>Cadastre sua Startup</h2>
-            <form method=get>
-                <div id=id-cad-startup__id-esquerdo>
-                    <text>Nome da startup:</text><br><input class=c-inputs name="startup">
-                    <text>Descrição:</text><br><textarea rows=14 cols=20% name="descricao"></textarea><br>
-                    <text>Setor:</text><br>
-                    <div id=i-setor>
+            <form action=startup.ts method=get>
+                <div id=c-cad-startup__id-esquerdo>
+                    <label for=startup>Nome da startup:</label><br><input class=c-inputs name="startup" required>
+                    <label for=desc>Descrição:</label><br><textarea rows=13 cols=30% placeholder="Uma breve descrição da startup, informando o que ela faz e sua proposta de valor." name="descricao" required></textarea><br>
+                    <label for=setor>Setor:</label><br>
+                    <div id=id-setor>
                         <div id=id-esquerdo__id-setor-esquerdo>
                             <input type="checkbox" name="setor">Tecnologia<br>
                             <input type="checkbox" name="setor">Fintech<br>
@@ -35,24 +36,35 @@
                             <input type="checkbox" name="setor">Alimentos e Agricultura<br>
                             <input type="checkbox" name="setor">Transporte e Mobilidade</div>
                         </div>
-                    <text>Outros:</text><input class=c-inputs name="startup">
+                    <div id=id-setor__id-outros><label for=outros>Outros:</label><input class=c-inputs name="outros" ></div>
                 </div>
-                <div id=id-cad-startup__id-direito>
-                    <text>Website:</text><input class=c-inputs type="url" name="website"><br>
-                    <text>Email:</text><input class=c-inputs type="email" name="email">
-                    <text>Telefone:</text><input class=c-inputs type="tel" name="telefone"><br>
-                    <text>Possui endereço físico:</text><br>
-                    <input class=box2 type="radio" name="endereco">Sim
-                    <input class=box2 type="radio" name="endereco">Não<br>
-                    <text>Estado:</text><br><input class=c-inputs name="estado">
-                    <text>Cidade:</text><br><input class=c-inputs name="cidade">
-                    <text>Bairro:</text><br><input class=c-inputs name="bairro">
-                    <text>Rua:</text><br><input class=c-inputs name="rua"></text>
-                    <text>CEP:</text><br><input class=c-inputs type="number" name="cep"></div>
-                <div id=id-cad-startup__id-functs>
-                    <input class=c-funct type=submit>
-                    <input class=c-funct type=reset></div>
+                <div id=c-cad-startup__id-direito>
+                    <label for=website>Website:</label><input class=c-inputs type="url" name="website"><br>
+                    <label for=email>E-mail:</label><input class=c-inputs type="email" name="email" required>
+                    <label for=telefone>Telefone:</label><input class=c-inputs type="tel" placeholder="(00) 0 0000-0000" name="telefone" required><br>
+                    <label for=endereco>Possui endereço físico:</label><br>
+                    <input type="radio" name="endereco"><label for=endereco>Sim</label>
+                    <input class=box2 type="radio" name="endereco"><label for=endereco>Não</label><br>
+                    <label for=estado>Estado:</label><br><input class=c-inputs list=estado name="estado" required>
+                    <label for=cidade>Cidade:</label><br><input class=c-inputs name="cidade" required>
+                    <label for=bairro>Bairro:</label><br><input class=c-inputs name="bairro">
+                    <label for=rua>Rua:</label><br><input class=c-inputs name="rua"></label>
+                    <label for=cep>CEP:</label><br><input class=c-inputs type="number" placeholder=00000-00 name="cep"></div>
+                <div id=c-cad-startup__id-abaixo>
+                    <h3>Fundadores</h3>
+                    <label for=fundador>O nome e sobrenome dos fundadores da startup, bem como informações profissionais anteriores e como eles se conheceram.</label><br>
+                    <textarea rows=13 name=fundador 
+                    placeholder="
+Nome do fundador:
+Sobrenome do fundador:
+Responsabilidades:
+Experiência profissional anterior:" required></textarea>
+                    <button type="button" onclick="adicionarFundador()">Adicionar Fundador</button>
+                </div>
+                <div id=c-cad-startup__id-functs>
+                    <input class=id-functs-id-funct type=submit>
+                    <input class=id-functs-id-funct type=reset></div>
             </form>
-        </section>
+        </div>
     </body>
 </html>
