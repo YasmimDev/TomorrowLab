@@ -1,49 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang=pt-br>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+        <meta refresh=50>
+
         <title>TomorrowLab - Cadastro de Startup</title>
-        <link rel=stylesheet href=styles.css>
-        <meta author="Luiz Augusto">
+        <link rel=stylesheet href=startup-styles.css>
     </head>
     <body>
-        <section id="menu">
-          <nav class=nav-bar>
-            <a id=tomorrow-logo href="https://www.tomorrowlab.studio/index.html"><img id=tomorrow-logo src="logo-tomorrow2x.png"></a>
-            <a class=link href="https://www.tomorrowlab.studio/">PORTFÓLIO</a>
-            <a class=link href="https://www.tomorrowlab.studio/index.html">HOME</a>
+        <section id="id-menu">
+          <nav class=id-menu__c-nav-bar>
+            <a class=c-nav-bar__c-tomorrow-logo href="#"><img id=c-nav-bar__c-tomorrow-logo src="logo-tomorrow2x.png"></a>
+            <a class=c-nav-bar__c-link href="#"><h1>PORTFÓLIO</h1></a>
+            <a class=c-nav-bar__c-link href="#"><h1>HOME</h1></a>
           </nav>
-        </section>
-        <section id=cad_startup>
-            <h1>Cadastre sua Startup</h1>
+        </ul>
+        <section id=id-cad-startup>
+            <h2>Cadastre sua Startup</h2>
             <form method=get>
-                <div id=esquerdo>
-                    <t>Nome da startup:</t><br><input class=inputs type="input" name="startup"><br>
-                    <t>Descrição:</t><br><textarea rows=9 cols=40 name="descricao"></textarea>
-                    <br><t>Setor:</t><br>
-                        <input type="checkbox" name="setor">Tecnologia
-                        <input id=centro type="checkbox" name="setor">Saúde<br>
-                        <input type="checkbox" name="setor">Fintech
-                        <input class=centro type="checkbox" name="setor">Educação<br>
-                        <input type="checkbox" name="setor">Energia
-                        <input class=centro type="checkbox" name="setor">Alimentos e Agricultura<br>
-                        <input type="checkbox" name="setor">E-commerce
-                        <input type="checkbox" name="setor">Transporte e Mobilidade<br>
-                    <br><t>Outros</t><br><input class=inputs type="input" name="startup"></div>
-                <div id=direito>
-                    <t>Website:</t><br><input class=inputs type="input" name="website"><br>
-                    <t>Email:</t><br><input class=inputs type="input" name="email"><br>
-                    <t>Telefone:</t><br><input class=inputs type="number" name="telefone"><br>
-                    <t>Possui endereço físico:</t><br>
+                <div id=id-cad-startup__id-esquerdo>
+                    <text>Nome da startup:</text><br><input class=c-inputs name="startup">
+                    <text>Descrição:</text><br><textarea rows=14 cols=20% name="descricao"></textarea><br>
+                    <text>Setor:</text><br>
+                    <div id=i-setor>
+                        <div id=id-esquerdo__id-setor-esquerdo>
+                            <input type="checkbox" name="setor">Tecnologia<br>
+                            <input type="checkbox" name="setor">Fintech<br>
+                            <input type="checkbox" name="setor">Energia<br>
+                            <input type="checkbox" name="setor">E-commerce</div>
+                        <div id=id-esquerdo__id-setor-direito>
+                            <input type="checkbox" name="setor">Saúde<br>
+                            <input type="checkbox" name="setor">Educação<br>
+                            <input type="checkbox" name="setor">Alimentos e Agricultura<br>
+                            <input type="checkbox" name="setor">Transporte e Mobilidade</div>
+                        </div>
+                    <text>Outros:</text><input class=c-inputs name="startup">
+                </div>
+                <div id=id-cad-startup__id-direito>
+                    <text>Website:</text><input class=c-inputs type="url" name="website"><br>
+                    <text>Email:</text><input class=c-inputs type="email" name="email">
+                    <text>Telefone:</text><input class=c-inputs type="tel" name="telefone"><br>
+                    <text>Possui endereço físico:</text><br>
                     <input class=box2 type="radio" name="endereco">Sim
                     <input class=box2 type="radio" name="endereco">Não<br>
-                    <t>Estado:<br><input class=inputs type="input" name="estado"></t><br>
-                    <t>Cidade<br><input class=inputs type="input" name="cidade"></t><br>
-                    <t>Bairro:<br><input class=inputs type="input" name="bairro"></t><br>
-                    <t>Rua:<br><input class=inputs type="input" name="rua"></t><br>
-                    <t>CEP:<br><input class=inputs type="number" name="cep"></t><br></div>
-                <div id=abaixo>
-                    <input class=funct type=submit>
-                    <input class=funct type=reset></div>
+                    <text>Estado:</text><br><input class=c-inputs name="estado">
+                    <text>Cidade:</text><br><input class=c-inputs name="cidade">
+                    <text>Bairro:</text><br><input class=c-inputs name="bairro">
+                    <text>Rua:</text><br><input class=c-inputs name="rua"></text>
+                    <text>CEP:</text><br><input class=c-inputs type="number" name="cep"></div>
+                <div id=id-cad-startup__id-functs>
+                    <input class=c-funct type=submit>
+                    <input class=c-funct type=reset></div>
             </form>
         </section>
     </body>

@@ -1,0 +1,71 @@
+/*cores Roxo: #5900ff Branca: #fff  Cinza: #f2f2f2*/
+h1, h2, title {	font-style: "graphie bold"; }
+body {
+	font-style: "helvetica neue";
+	margin: 0rem;
+	font-size: 115%;
+}
+text { margin-bottom: 0.5rem; }
+#id-menu {
+    top: 0rem;
+	position: absolute;
+	width: 100%;
+	height: 5rem;
+	background-color: #763DF2;
+}
+#c-nav-bar__c-tomorrow-logo {
+	width: 8rem;
+	margin-left: 2rem;
+}
+#c-nav-bar__c-tomorrow-logo, .c-nav-bar__c-link { margin: 1rem; }
+.c-nav-bar__c-link {
+	float: right;
+	text-decoration: none;
+	color: #fff;
+	margin-top: 0.5rem;
+}
+#id-cad_startup {
+	background-color: #f2f2f2;
+	position: absolute;
+	top: 4rem;
+	width: 100%;
+	height: 100%;
+}
+h1 {
+	top: 5rem;
+	font-size: 20px;
+}
+h2 {
+	text-align: center;
+	font-size: 27px;
+}
+#id-cad-startup__id-direito, #id-cad-startup__id-esquerdo {
+	width: 40%;
+	float: left;
+	margin-left: 10%;
+}
+input, text { margin: 0.25rem; }
+#id-esquerdo__id-setor-esquerdo {
+	width: 40%;
+	float: left;
+}
+#id-esquerdo__id-setor-direito {
+	float: right;
+	width: 50%;
+}
+#id-cad-startup__id-functs {
+	display: inline-block;
+	width: 95%;
+	text-align: center;
+}
+.c-inputs {
+	color: #fff;
+	height: 30%;
+	width: 90%;
+}
+.c-centro { margin-left: 2rem; }
+.c-funct {
+	margin-top: 2rem;
+	margin-right: 0.5;
+	font-size: 18px;
+}
