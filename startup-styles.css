@@ -10,8 +10,9 @@ body {
     top: 0rem;
 	position: absolute;
 	width: 100%;
-	height: 5rem;
+	height: 4.5rem;
 	background-color: #763DF2;
+	margin-bottom: 1.5rem;
 }
 #c-nav-bar__c-tomorrow-logo {
 	max-width: 100%;
@@ -28,8 +29,8 @@ body {
 }
 .c-cad-startup {
 	top: 5rem;
-	width: 80%;
-	margin: 10%;
+	width: 90%;
+	margin: 5%;
 }
 h1 {
 	top: 5rem;
@@ -37,11 +38,14 @@ h1 {
 }
 h2 {
 	text-align: center;
+	margin: 3rem;
 	font-size: 27px;
 }
 div { float: left; }
-#c-cad-startup__id-direito, #c-cad-startup__id-esquerdo { width: 40%; }
-#c-cad-startup__id-direito { margin-left: 15%; }
+#c-cad-startup__id-direito, #c-cad-startup__id-esquerdo {
+	width: 40%;
+	margin-left: 7%
+}
 input { margin: 0.2rem; }
 #id-esquerdo__id-setor-esquerdo { width: 35%; }
 #id-esquerdo__id-setor-direito {
@@ -52,7 +56,9 @@ textarea {
 	font-size: 120%;
 	width: 100%;
 }
-#c-cad-startup__id-abaixo { margin-top: 1rem; }
+.c-cad-startup__c-abaixo {
+	margin: 8%;
+}
 button {
 	font-size: 16px;
 	margin: 1.3rem;
@@ -64,7 +70,7 @@ button {
 	text-align: center;
 }
 .c-inputs {
-	margin-left: 0px;
+	margin-top: 0.5rem; 
 	height: 30%;
 	width: 100%;
 }

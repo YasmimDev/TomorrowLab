@@ -24,18 +24,21 @@
                     <label for=startup>Nome da startup:</label><br><input class=c-inputs id="startup" required>
                     <label for=desc>Descrição:</label><br><textarea rows=13 placeholder="Uma breve descrição da startup, informando o que ela faz e sua proposta de valor." id="desc" required></textarea><br>
                     <label for=id-setor>Setor:</label><br>
-                    <div id=id-esquerdo__id-setor-esquerdo>
-                        <input type="checkbox" id=id-setor>Tecnologia<br>
-                        <input type="checkbox">Fintech<br>
-                        <input type="checkbox">Energia<br>
-                        <input type="checkbox">E-commerce</div>
-                    <div id=id-esquerdo__id-setor-direito>
-                        <input type="checkbox">Saúde<br>
-                        <input type="checkbox">Educação<br>
-                        <input type="checkbox">Alimentos e Agricultura<br>
-                        <input type="checkbox">Transporte e Mobilidade</div>
-                    </div>
-                    <div id=id-setor__id-outros><label for=outros>Outros:</label><input class=c-inputs id="outros" ></div>
+                    <div id=id-setor>
+                        <div id=id-esquerdo__id-setor-esquerdo>
+                            <input type="checkbox" id=id-setor>Tecnologia<br>
+                            <input type="checkbox">Fintech<br>
+                            <input type="checkbox">Energia<br>
+                            <input type="checkbox">E-commerce</div>
+                        <div id=id-esquerdo__id-setor-direito>
+                            <input type="checkbox">Saúde<br>
+                            <input type="checkbox">Educação<br>
+                            <input type="checkbox">Alimentos e Agricultura<br>
+                            <input type="checkbox">Transporte e Mobilidade</div >
+                            <div id=c-cad-startup__id-abaixo>
+                                <label for=outros>Outros:</label><input class=c-inputs id="outros"></div>
+                        </div>
+                </div>
                 <div id=c-cad-startup__id-direito>
                     <label for=website>Website:</label><input class=c-inputs type="url" id="website"><br>
                     <label for=email>E-mail:</label><input class=c-inputs type="email" id="email" required>
@@ -48,10 +51,10 @@
                     <label for=bairro>Bairro:</label><br><input class=c-inputs id="bairro">
                     <label for=rua>Rua:</label><br><input class=c-inputs id="rua">
                     <label for=cep>CEP:</label><br><input class=c-inputs type="number" placeholder=00000-00 id="cep"></div>
-                <div id=c-cad-startup__id-abaixo>
+                <div class=c-cad-startup__c-abaixo>
                     <h3>Fundadores</h3>
                     <label for=fundador>O nome e sobrenome dos fundadores da startup, bem como informações profissionais anteriores e como eles se conheceram.</label><br>
-                    <textarea rows=13 id=fundador 
+                    <textarea rows=7 id=fundador 
                     placeholder="
 Nome do fundador:
 Sobrenome do fundador:
