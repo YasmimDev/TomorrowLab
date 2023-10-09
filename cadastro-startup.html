@@ -7,12 +7,12 @@
 
         <title>TomorrowLab - Cadastro de Startup</title>
         <link rel=stylesheet href=startup-styles.css>
-        <script type="text/javascript" src="adicionarFundador.js"></script>
+        <script src="adicionarFundador.js"></script>
     </head>
     <body>
         <div class="c-menu">
             <nav class=c-menu__c-nav-bar>
-                <a class=c-nav-bar__c-tomorrow-logo href="#"><img id=c-nav-bar__c-tomorrow-logo src="img/logo-tomorrow2x.png"></a>
+                <a class=c-nav-bar__c-tomorrow-logo href="#"><img id=c-nav-bar__c-tomorrow-logo src="img/logo-tomorrow2x.png" alt="TomorrowLab Venture Studio"></a>
                 <a class=c-nav-bar__c-link href="#"><h1>PORTFÓLIO</h1></a>
                 <a class=c-nav-bar__c-link href="#"><h1>HOME</h1></a>
             </nav>
@@ -21,39 +21,37 @@
             <h2>Cadastre sua Startup</h2>
             <form action=startup.ts method=get>
                 <div id=c-cad-startup__id-esquerdo>
-                    <label for=startup>Nome da startup:</label><br><input class=c-inputs name="startup" required>
-                    <label for=desc>Descrição:</label><br><textarea rows=13 cols=30% placeholder="Uma breve descrição da startup, informando o que ela faz e sua proposta de valor." name="descricao" required></textarea><br>
-                    <label for=setor>Setor:</label><br>
-                    <div id=id-setor>
-                        <div id=id-esquerdo__id-setor-esquerdo>
-                            <input type="checkbox" name="setor">Tecnologia<br>
-                            <input type="checkbox" name="setor">Fintech<br>
-                            <input type="checkbox" name="setor">Energia<br>
-                            <input type="checkbox" name="setor">E-commerce</div>
-                        <div id=id-esquerdo__id-setor-direito>
-                            <input type="checkbox" name="setor">Saúde<br>
-                            <input type="checkbox" name="setor">Educação<br>
-                            <input type="checkbox" name="setor">Alimentos e Agricultura<br>
-                            <input type="checkbox" name="setor">Transporte e Mobilidade</div>
-                        </div>
-                    <div id=id-setor__id-outros><label for=outros>Outros:</label><input class=c-inputs name="outros" ></div>
-                </div>
+                    <label for=startup>Nome da startup:</label><br><input class=c-inputs id="startup" required>
+                    <label for=desc>Descrição:</label><br><textarea rows=13 placeholder="Uma breve descrição da startup, informando o que ela faz e sua proposta de valor." id="desc" required></textarea><br>
+                    <label for=id-setor>Setor:</label><br>
+                    <div id=id-esquerdo__id-setor-esquerdo>
+                        <input type="checkbox" id=id-setor>Tecnologia<br>
+                        <input type="checkbox">Fintech<br>
+                        <input type="checkbox">Energia<br>
+                        <input type="checkbox">E-commerce</div>
+                    <div id=id-esquerdo__id-setor-direito>
+                        <input type="checkbox">Saúde<br>
+                        <input type="checkbox">Educação<br>
+                        <input type="checkbox">Alimentos e Agricultura<br>
+                        <input type="checkbox">Transporte e Mobilidade</div>
+                    </div>
+                    <div id=id-setor__id-outros><label for=outros>Outros:</label><input class=c-inputs id="outros" ></div>
                 <div id=c-cad-startup__id-direito>
-                    <label for=website>Website:</label><input class=c-inputs type="url" name="website"><br>
-                    <label for=email>E-mail:</label><input class=c-inputs type="email" name="email" required>
-                    <label for=telefone>Telefone:</label><input class=c-inputs type="tel" placeholder="(00) 0 0000-0000" name="telefone" required><br>
-                    <label for=endereco>Possui endereço físico:</label><br>
-                    <input type="radio" name="endereco"><label for=endereco>Sim</label>
-                    <input class=box2 type="radio" name="endereco"><label for=endereco>Não</label><br>
-                    <label for=estado>Estado:</label><br><input class=c-inputs list=estado name="estado" required>
-                    <label for=cidade>Cidade:</label><br><input class=c-inputs name="cidade" required>
-                    <label for=bairro>Bairro:</label><br><input class=c-inputs name="bairro">
-                    <label for=rua>Rua:</label><br><input class=c-inputs name="rua"></label>
-                    <label for=cep>CEP:</label><br><input class=c-inputs type="number" placeholder=00000-00 name="cep"></div>
+                    <label for=website>Website:</label><input class=c-inputs type="url" id="website"><br>
+                    <label for=email>E-mail:</label><input class=c-inputs type="email" id="email" required>
+                    <label for=telefone>Telefone:</label><input class=c-inputs type="tel" placeholder="(00) 0 0000-0000" id="telefone" required><br>
+                    <label for="id-endereco-sim">Possui endereço físico:</label><br>
+                    <input type="radio" id="id-endereco-sim"><label for=id-endereco-sim>Sim</label>
+                    <input class=box2 type="radio" id="id-endereco-nao"><label for=id-endereco-nao>Não</label><br>
+                    <label for=estado>Estado:</label><br><input class=c-inputs id="estado" required>
+                    <label for=cidade>Cidade:</label><br><input class=c-inputs id="cidade" required>
+                    <label for=bairro>Bairro:</label><br><input class=c-inputs id="bairro">
+                    <label for=rua>Rua:</label><br><input class=c-inputs id="rua">
+                    <label for=cep>CEP:</label><br><input class=c-inputs type="number" placeholder=00000-00 id="cep"></div>
                 <div id=c-cad-startup__id-abaixo>
                     <h3>Fundadores</h3>
                     <label for=fundador>O nome e sobrenome dos fundadores da startup, bem como informações profissionais anteriores e como eles se conheceram.</label><br>
-                    <textarea rows=13 name=fundador 
+                    <textarea rows=13 id=fundador 
                     placeholder="
 Nome do fundador:
 Sobrenome do fundador:
