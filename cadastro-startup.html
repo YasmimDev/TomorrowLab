@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-        <meta http-equiv="refresh" content="50">
+        <meta http-equiv="refresh" content="1000">
 
         <title>TomorrowLab - Cadastro de Startup</title>
         <link rel=stylesheet href=startup-styles.css>
@@ -12,32 +12,43 @@
     <body>
         <div class="c-menu">
             <nav class=c-menu__c-nav-bar>
-                <a class=c-nav-bar__c-tomorrow-logo href="#"><img id=c-nav-bar__c-tomorrow-logo src="img/logo-tomorrow2x.png" alt="TomorrowLab Venture Studio"></a>
+                <a href="#"><img id=c-nav-bar__id-tomorrow-logo src="img/logo-tomorrow2x.png" alt="TomorrowLab Venture Studio"></a>
                 <a class=c-nav-bar__c-link href="#"><h1>PORTFÓLIO</h1></a>
                 <a class=c-nav-bar__c-link href="#"><h1>HOME</h1></a>
             </nav>
         </div>
         <div class=c-cad-startup>
             <h2>Cadastre sua Startup</h2>
-            <form action=startup.ts method=get>
+            <form action=startup.ts method=get id=form-startup>
                 <div id=c-cad-startup__id-esquerdo>
                     <label for=startup>Nome da startup:</label><br><input class=c-inputs id="startup" required>
-                    <label for=desc>Descrição:</label><br><textarea rows=13 placeholder="Uma breve descrição da startup, informando o que ela faz e sua proposta de valor." id="desc" required></textarea><br>
-                    <label for=id-setor>Setor:</label><br>
+                    <label for=desc>Descrição:</label><br><textarea rows=8 placeholder="Uma breve descrição da startup, informando o que ela faz e sua proposta de valor." id="desc" required></textarea><br>
+                    <label>Setor:</label><br>
                     <div id=id-setor>
                         <div id=id-esquerdo__id-setor-esquerdo>
-                            <input type="checkbox" id=id-setor>Tecnologia<br>
-                            <input type="checkbox">Fintech<br>
-                            <input type="checkbox">Energia<br>
-                            <input type="checkbox">E-commerce</div>
-                        <div id=id-esquerdo__id-setor-direito>
-                            <input type="checkbox">Saúde<br>
-                            <input type="checkbox">Educação<br>
-                            <input type="checkbox">Alimentos e Agricultura<br>
-                            <input type="checkbox">Transporte e Mobilidade</div >
-                            <div id=c-cad-startup__id-abaixo>
-                                <label for=outros>Outros:</label><input class=c-inputs id="outros"></div>
+                            <input type="checkbox" id="tecnologia">
+                            <label for=tecnologia>Tecnologia</label><br>
+                            <input type="checkbox" id="fintech">
+                            <label for=fintech>Fintech</label><br>
+                            <input type="checkbox" id="energia">
+                            <label for=energia>Energia</label><br>
+                            <input type="checkbox" id="e-commerce">
+                            <label for=e-commerce>E-commerce</label>
                         </div>
+                        <div id=id-esquerdo__id-setor-direito>
+                            <input type="checkbox" id="saude">
+                            <label for=saude>Saúde</label><br>
+                            <input type="checkbox" id="educacao">
+                            <label for=educacao>Educação</label><br>
+                            <input type="checkbox" id="ali-mobi">
+                            <label for=ali-mobi>Alimentos e Agricultura</label><br>
+                            <input type="checkbox" id="transp-mobi">
+                            <label for=transp-mobi>Transporte e Mobilidade</label>
+                        </div >
+                        <div id=id-setor-direito__id-abaixo>
+                            <br><label for=outros>Outros:</label>
+                            <input class=c-inputs id="outros"></div>
+                    </div>
                 </div>
                 <div id=c-cad-startup__id-direito>
                     <label for=website>Website:</label><input class=c-inputs type="url" id="website"><br>
@@ -63,8 +74,8 @@ Experiência profissional anterior:" required></textarea>
                     <button type="button" onclick="adicionarFundador()">Adicionar Fundador</button>
                 </div>
                 <div id=c-cad-startup__id-functs>
-                    <input class=id-functs-id-funct type=submit>
-                    <input class=id-functs-id-funct type=reset></div>
+                    <input class=id-functs-id-funct type=submit form=form-startup>
+                    <input class=id-functs-id-funct type=reset form=form-startup></div>
             </form>
         </div>
     </body>
