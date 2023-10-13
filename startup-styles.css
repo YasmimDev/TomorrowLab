@@ -1,82 +1,67 @@
 /*cores Roxo: #5900ff Branca: #fff  Cinza: #f2f2f2*/
 h1, h2, h3, title {	font-family: "graphie bold", sans-serif; }
+
 body {
-	background-color: #f2f2f2;
 	font-family: 'Montserrat', sans-serif;
 	margin: 0rem;
-	font-size: 115%;
-	text-align: left;
+	background-color: #f2f2f2;
 }
 div { float: left; }
-h1 {
-	font-size: 100%;
-	overflow: hidden;
-	margin-right: 0.3rem;
+
+#id-nav-bar__id-logos { width: 50%; }
+
+#id-logos__id-tomorrow-logo { width: auto; max-width: 25%; margin: 2%; }
+
+#id-nav-bar__id-links { float: right; display: flex; margin: 1%; }
+.id-nav-bar__c-link {
+	color: #fff;
+	margin-right: 3%;
+	text-decoration: none;
 }
-.c-menu {
-    top: 0rem;
-	position: absolute;
+#id-menu {
 	width: 100%;
-	max-height: 20%;
 	height: auto;
-	background-color: #763DF2;
+	max-height: 15%;
 	overflow: hidden;
+	background-color: #763DF2;
 	margin: 0px;
 }
-#c-nav-bar__id-tomorrow-logo, .c-nav-bar__c-link { max-width: 30%; }
-
-#c-nav-bar__id-tomorrow-logo { width: 15%;	margin: 1%; }
-.c-nav-bar__c-link {
-	margin: 1%;
-	float: right;
-	text-decoration: none;
-	color: #fff;
-}
-.c-cad-startup {
-	position: absolute;
-	top: 2%;
-	padding: 10%;
-	width: 80%;
-	height: auto;
-	margin: 0%;
-}
+h1 { font-size: 105%; margin-right: 2.5%; }
 h2 {
-	padding-right: 5%;
+	padding-right: 10%;
 	text-align: center;
-	margin-top: 5%;
-	font-size: 150%;
+	margin-top: 3%;
+	font-size: 170%;
 }
-#c-cad-startup__id-direito, #c-cad-startup__id-esquerdo { width: 45%; }
-
-#c-cad-startup__id-direito { margin-left: 10%; }
-
-#id-esquerdo__id-setor-esquerdo, #id-esquerdo__id-setor-direito { overflow: hidden; }
-
-#id-esquerdo__id-setor-esquerdo { margin-right: 5%; width: 44%; }
-label {
-	font-size: 100%;
-	margin: 0.5px;
-	text-overflow: ellipsis;
+#id-cad-startup {
+    top: 15%;
+    background-color: #fdfdfd;
+    width: 80%;
+	padding-left: 5%;
+	margin: 1% 5% 0% 7%;
 }
-#id-esquerdo__id-setor-direito { width: 50%; }
+#id-cad-startup__id-direito { float: right; margin-right: 7%; }
 
-#id-setor-direito__id-abaixo, #id-setor { margin: 0px; }
+#id-cad-startup__id-esquerdo, #id-cad-startup__id-direito,
+#id-esquerdo__id-setor-esquerdo, #id-esquerdo__id-setor-direito {
+	width: 45%;
+}
+input, label { margin: 2px; }
 
-textarea { font-size: 120%;	width: 100%; }
+textarea { font-size: 120%;	width: 95%; }
 
-.c-cad-startup__c-abaixo { width: 90%; }
+#id-cad-startup__id-abaixo { width: 97%; }
 button {
-	font-size: 16px;
+	font-size: 100%;
 	margin: 1rem;
 	height: 30%;
-	width: 95%;
+	width: 90%;
 }
-.c-cad-startup__c-abaixo, #c-cad-startup__id-functs { width: 100%; }
+.c-inputs {	margin-left: 0px; width: 95%; }
 
-#c-cad-startup__id-functs { text-align: center; }
-.c-inputs {
-	margin: 0.5rem;
-	margin-left: 0px;
-	width: 100%;
+#id-cad-startup__id-functs {
+	width: 90%;
+	display: flex;
+	justify-content: center;
 }
-.id-functs-id-funct { margin-right: 0.5rem;	font-size: 15px; }
+.id-functs__c-funct { font-size: 100%; margin: 2% 0% 0% 2%; }
