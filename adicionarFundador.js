@@ -1,7 +1,10 @@
+'use strict';
+
 function adicionarFundador() {
-    const id = document.querySelector('#id-cad-startup__id-abaixo');
+    const div = document.querySelector('#outro-fundador');
     const novoFundador = document.createElement('textarea');
     novoFundador.rows = 5;
     novoFundador.placeholder = 'Nome do fundador:\nSobrenome do fundador:\nResponsabilidades:\nExperiência profissional anterior:'
-    id.appendChild(novoFundador);
+    novoFundador.classList.add("form-control");
+    div.appendChild(novoFundador);
 }

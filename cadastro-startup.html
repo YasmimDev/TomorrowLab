@@ -1,85 +1,96 @@
 <!DOCTYPE html>
-<html lang=pt-br>
+<html lang=en>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-        <meta http-equiv="refresh" content="300">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="600">
 
         <title>TomorrowLab - Cadastro de Startup</title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel=stylesheet href=startup-styles.css>
         <script src="adicionarFundador.js"></script>
     </head>
     <body>
-        <div id=id-menu>
-            <nav id=id-menu__id-nav-bar>
-                <div id=id-nav-bar__id-logos>
-                    <a href="#"><img id=id-logos__id-tomorrow-logo src="img/logo-tomorrow2x.png" alt="TomorrowLab Venture Studio"></a></div>
-                <div id=id-nav-bar__id-links>
-                    <a class=id-nav-bar__c-link href="#"><h1>HOME</h1></a>
-                    <a class=id-nav-bar__c-link href="#"><h1>PORTFÓLIO</h1></a>
-                </div>
-            </nav>
-        </div>
+        <nav class=navbar>
+            <a class=nav-brand href="#"><img id=brand-logo src="img/logo-tomorrow2x.png" alt="TomorrowLab Venture Studio"></a>
+            <div class="navbar item">
+                <div id=item-home><a href="#">HOME</a></div>
+                <div id=item-portfolio><a class=nav-link href="#">PORTFÓLIO</a></div>
+            </div>
+        </nav>
         <div id=id-cad-startup>
             <h2>Cadastre sua Startup</h2>
-            <form action=startup.ts method=get id=form-startup>
-                <div id=id-cad-startup__id-esquerdo>
-                    <label for=startup>Nome da startup:</label><input class=c-inputs id="startup" required>
-                    <label for=desc>Descrição:</label><textarea rows=8 placeholder="Uma breve descrição da startup, informando o que ela faz e sua proposta de valor." id="desc" required></textarea>
-                    <label>Setor:</label><br>
-                    <div id=id-setor>
-                        <div id=id-esquerdo__id-setor-esquerdo>
-                            <input type="checkbox" id="tecnologia">
-                            <label for=tecnologia>Tecnologia</label><br>
-                            <input type="checkbox" id="fintech">
-                            <label for=fintech>Fintech</label><br>
-                            <input type="checkbox" id="energia">
-                            <label for=energia>Energia</label><br>
-                            <input type="checkbox" id="e-commerce">
-                            <label for=e-commerce>E-commerce</label><br>
+            <form action=startup.js method=post name=formStartup>
+                <div class=form-row>
+                    <div class=col-md-5>
+                        <label for=startup>Nome da startup:</label>
+                        <input class=form-control id="startup" required>
+                        <label for=desc>Descrição:</label>
+                        <textarea class=form-control rows=10 placeholder="Uma breve descrição da startup, informando o que ela faz e sua proposta de valor." id="desc" required></textarea>
+                        <label class="form-check-label" for=tecnologia>Setor:</label><br>
+                        <div class="form-row setor">
+                            <div class="col-6">
+                                <input class="form-check-input" type="checkbox" id="tecnologia">
+                                <label class="form-check-label" for=tecnologia>Tecnologia</label><br>
+                                <input class="form-check-input" type=checkbox id="fintech">
+                                <label class="form-check-label" for=fintech>Fintech</label><br>
+                                <input class="form-check-input" type="checkbox" id="energia">
+                                <label class="form-check-label" for=energia>Energia</label><br>
+                                <input class="form-check-input" type="checkbox" id="e-commerce">
+                                <label class="form-check-label" for=e-commerce>E-commerce</label></div>
+                            <div class="col-6">
+                                <input class="form-check-input" type="checkbox" id="saude">
+                                <label class="form-check-label" for=saude>Saúde</label><br>
+                                <input class="form-check-input" type="checkbox" id="educacao">
+                                <label class="form-check-label" for=educacao>Educação</label><br>
+                                <input class="form-check-input" type="checkbox" id="ali-mobi">
+                                <label class="form-check-label" for=ali-mobi>Alimentos e Agricultura</label><br>
+                                <input class="form-check-input" type="checkbox" id="transp-mobi">
+                                <label class="form-check-label" for=transp-mobi>Transporte e Mobilidade</label></div>
                         </div>
-                        <div id=id-esquerdo__id-setor-direito>
-                            <input type="checkbox" id="saude">
-                            <label for=saude>Saúde</label><br>
-                            <input type="checkbox" id="educacao">
-                            <label for=educacao>Educação</label><br>
-                            <input type="checkbox" id="ali-mobi">
-                            <label for=ali-mobi>Alimentos e Agricultura</label><br>
-                            <input type="checkbox" id="transp-mobi">
-                            <label for=transp-mobi>Transporte e Mobilidade</label>
-                        </div >
-                        <div id=id-setor-direito__id-abaixo>
-                            <label for=outros>Outros:</label>
-                            <input class=c-inputs id="outros"></div>
+                        <label class="form-check-label" for=outros>Outros:</label>
+                        <input class=form-control id="outros">
                     </div>
-                </div>
-                <div id=id-cad-startup__id-direito>
-                    <label for=website>Website:</label><input class=c-inputs type="url" id="website">
-                    <label for=email>E-mail:</label><input class=c-inputs type="email" id="email" required>
-                    <label for=telefone>Telefone:</label><input class=c-inputs type="tel" placeholder="(00) 0 0000-0000" id="telefone" required>
-                    <label for="id-endereco-sim">Possui endereço físico:</label><br>
-                    <input type="radio" id="id-endereco-sim"><label for=id-endereco-sim>Sim</label>
-                    <input class=box2 type="radio" id="id-endereco-nao"><label for=id-endereco-nao>Não</label><br>
-                    <label for=estado>Estado:</label><input class=c-inputs id="estado" required>
-                    <label for=cidade>Cidade:</label><input class=c-inputs id="cidade" required>
-                    <label for=bairro>Bairro:</label><input class=c-inputs id="bairro">
-                    <label for=rua>Rua:</label><input class=c-inputs id="rua">
-                    <label for=cep>CEP:</label><input class=c-inputs type="number" placeholder=00000-00 id="cep"></div>
-                <div id=id-cad-startup__id-abaixo>
-                    <h3>Fundadores</h3>
-                    <label for=fundador>O nome e sobrenome dos fundadores da startup, bem como informações profissionais anteriores e como eles se conheceram.</label>
-                    <textarea rows=7 id=fundador 
-                    placeholder="
+                    <div class=col-md-5>
+                        <label for=website>Website:</label>
+                        <input class=form-control type="url" id="website">
+                        <label for=email>E-mail:</label>
+                        <input class=form-control type="email" id="email" required>
+                        <label for=telefone>Telefone:</label>
+                        <input class=form-control type="tel" placeholder="(00) 0 0000-0000" pattern="(00) 0 0000-0000" id="telefone" required>
+                        <div class="form-check form-check-inline">
+                            <label class=form-check-label for="endereco1">Tem endereço físico: </label>
+                            <input class=form-check-input type="radio" id=endereco1>
+                            <label class=form-check-label for=endereco1>Sim</label></div>
+                        <div class="form-check form-check-inline">
+                            <input class=form-check-input type="radio" id=endereco2>
+                            <label class=form-check-label for=endereco2>Não</label></div>
+                        <br><label for=estado>Estado:</label>
+                        <input class=form-control id="estado">
+                        <label for=cidade>Cidade:</label>
+                        <input class=form-control id="cidade">
+                        <label for=bairro>Bairro:</label>
+                        <input class=form-control id="bairro">
+                        <label for=rua>Rua:</label>
+                        <input class=form-control id="rua">
+                        <label for=cep>CEP:</label>
+                        <input class=form-control type="number" placeholder=00000-00 id="cep"></div>
+                    <div class="row fundador">
+                        <h3>Fundadores</h3>
+                        <label for=fundador>O nome e sobrenome dos fundadores da startup, bem como informações profissionais anteriores e como eles se conheceram.</label>
+                        <textarea class=form-control rows=7 id=fundador 
+                        placeholder="
 Nome do fundador:
 Sobrenome do fundador:
 Responsabilidades:
-Experiência profissional anterior:" required></textarea>
-                    <button type="button" onclick="adicionarFundador()">Adicionar Fundador</button>
+Experiência profissional anterior:" required></textarea></div>
+                    <div class="row fundador" id=outro-fundador></div>
+                    <button type=button class="btn btn-secondary" id=btn-fundador onclick="adicionarFundador()">Adicionar Fundador</button>
+                    <div class=form-row>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type=reset class="btn btn-secondary">Limpar</button></div>
                 </div>
-                <div id=id-cad-startup__id-functs>
-                    <input class=id-functs__c-funct type=submit form=form-startup>
-                    <input class=id-functs__c-funct type=reset  form=form-startup></div>
-            </form>
-        </div>
+            </form></div>
     </body>
 </html>
