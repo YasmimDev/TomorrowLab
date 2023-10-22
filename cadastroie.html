@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="refresh" content="300">
+
+    <title>TomorrowLab - Cadastro de Instituições de Ensino</title>
+    <link rel=stylesheet href=startup-styles.css>
+    <script src="adicionarFundador.js"></script>
+</head>
+
+<body>
+    <div id=id-menu>
+        <nav id=id-menu__id-nav-bar>
+            <div id=id-nav-bar__id-logos>
+                <a href="#"><img id=id-logos__id-tomorrow-logo src="img/logo-tomorrow2x.png"
+                        alt="TomorrowLab Venture Studio"></a>
+            </div>
+            <div id=id-nav-bar__id-links>
+                <a class=id-nav-bar__c-link href="#">
+                    <h1>HOME</h1>
+                </a>
+                <a class=id-nav-bar__c-link href="#">
+                    <h1>PORTFÓLIO</h1>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div id=id-cad-startup>
+        <h2>Cadastre sua Instituição de Ensino</h2>
+        </div>
+        <form action=startup.ts method=get id=form-startup>
+            <div id=id-cad-startup__id-esquerdo>
+                <label for=startup>Nome da instituição:</label><input class=c-inputs id="startup" required>
+                <label>Possui endereço físico:</label><br>
+                <div id=id-endereco>
+                    <div id=id-esquerdo__id-endereco-esquerdo>
+
+                    <input type="checkbox" id="sim">
+                    <label for=sim>Sim</label><br>
+                </div>
+            
+                <div id=id-direito__id-endereco-direito>
+                    <input type="checkbox" id="nao">
+                    <label for=nao>Não</label><br>
+                </div>
+                </div>
+               
+
+                <div id=id-cad-startup__id-down>
+                    <label for=ruaenumero>Rua e número:</label><input class=c-inputs id="rua e numero" required>
+                    <label for=bairro>Bairro:</label><input class=c-inputs id="bairro" required>
+                    <label for=cep>CEP:</label><input class=c-inputs type="number" placeholder=00000-00 id="cep">
+                    <label for=cidade>Cidade:</label><input class=c-inputs id="cidade">
+                    <label for=estado>Estado:</label><input class=c-inputs id="estado">
+                        </div>
+                    </div>
+                </div>
+
+                <form action=startup.ts method=get id=form-startup>
+                    <div id=id-cad-startup__id-esquerdo>
+                        <label for=startup>Website:</label><input class=c-inputs id="website" required>
+                    </div>
+                <div id=id-cad-startup__id-esquerdo>
+                    <label for=startup>E-mail:</label><input class=c-inputs id="email" required>
+                </div>
+                <div id=id-cad-startup__id-esquerdo>
+                <label for=startup>Telefone:</label><input class=c-inputs id="telefone" required>
+                </div>
+            </div>
+            
+            <div id=id-cad-startup__id-esquerdo>
+                <label for=startup>Tipo de instituição:</label><input class=c-inputs id="startup" required>
+                <label></label><br>
+                <div id=id-endereco>
+
+                    <div id=id-esquerdo__id-endereco-esquerdo>
+                        <input type="checkbox" id="escola">
+                        <label for=escola>Escola</label><br>
+                        <input type="checkbox" id="colegio">
+                        <label for=colegio>Colégio</label><br>
+                        <input type="checkbox" id="universidade">
+                        <label for=universidade>Universidade</label><br>
+                        <input type="checkbox" id="centrodeeducacaotecnologica">
+                        <label for=centrodeeducacaotecnologica>Centro de Educação Tecnológica</label><br>
+                    </div>
+                </div>
+
+                <div id=id-direito-endereco-direito>
+                    <input type="checkbox" id="faculdade">
+                    <label for=faculdade>Faculdade</label><br>
+                    <input type="checkbox" id="institutosfederais">
+                    <label for=institutosfederais>Institutos Federais</label><br>
+                    <input type="checkbox" id="centrouniversitário">
+                    <label for=centrouniversitário>Centro Universitário</label><br>
+                </div>
+
+                <div id=id-cad-startup__id-down>
+                    <label for=outrostipos>Outros tipos de instituições:</label><input class=c-inputs id="outrostipos">
+
+                </div>
+            
+
+                <div id=id-cad-startup__id-esquerdo>
+                    <label for=startup>Níveis de Ensino:</label><input class=c-inputs id="startup" required>
+                    <label></label><br>
+                    <div id=id-endereco>
+
+                        <div id=id-esquerdo__id-endereco-esquerdo>
+                            <input type="checkbox" id="fundamental">
+                            <label for=fundamental>Fundamental</label><br>
+                            <input type="checkbox" id="tecnologo">
+                            <label for=tecnologo>Tecnólogo</label><br>
+                            </div>
+                        </div>
+
+                        <div id=id-esquerdo__id-endereco-esquerdo>
+                            <input type="checkbox" id="medio">
+                            <label for=medio>Médio</label><br>
+                            <input type="checkbox" id="tecnico">
+                            <label for=tecnico>Técnico</label><br>
+                            </div>
+                        </div>
+
+                        <div id=id-esquerdo__id-endereco-esquerdo>
+                            <input type="checkbox" id="bacharelado">
+                            <label for=bacharelado>Bacharelado</label><br>
+                            <input type="checkbox" id="mestrado">
+                            <label for=mestrado>Mestrado</label><br>
+                            </div>
+                        </div>
+
+                        <div id=id-esquerdo__id-endereco-esquerdo>
+                            <input type="checkbox" id="bacharelado">
+                            <label for=bacharelado>Licenciatura</label><br>
+                            <input type="checkbox" id="mestrado">
+                            <label for=mestrado>Doutorado</label><br>
+                            </div>
+                        </div>
+
+
+                        <div id=id-cad-startup__id-esquerdo>
+                            <label for=startup>Outros níveis de ensino:</label><textarea placeholder="
+Forneça o nível de ensino"></textarea><br>
+
+                        <h3>Cursos Oferecidos:</h3>
+                            <label for=fundador>Os cursos oferecidos pela instituição, incluindo o nome do curso, grau e duração, logo após faça um upload da grade curricular do curso:</label>
+                            <textarea rows=5 id=fundador placeholder="
+Nome do Curso:
+Grau:
+Duração:" required></textarea>
+                            <button type="button" onclick="adicionarFundador()">Grade Curricular</button>
+                            <button type="button" onclick="adicionarFundador()">Adicionar Cursos</button>
+                        </div>
+<div>
+                        <h3>Investidores</h3>
+                        <label for=investidores>Uma lista dos principais investidores e/ou fontes de financiamento da empresa, incluindo nome, valor investido, participação na empresa, entre outros.:</label>
+                        <textarea rows=7 id=investidores placeholder="
+Nome:
+Responsabilidades:
+Valor Investido:
+Participação na empresa:
+Entre outros:" required></textarea>
+
+</div>
+
+<div>
+    <h3>Financiamento</h3>
+    <label for=financiamento></label>
+    <textarea rows=7 id=financiamento placeholder="
+Informacoes sobre o financiamento atual da startup, incluindo o montante total de financiamento levantado até o momento, bem como detalhes sobre a rodada de financiamento atual, como o tamanho da rodada, a avaliação pré e pós-dinheiro e quaisquer investidores que participaram." required></textarea>
+
+</div>
+
+
+<div>
+    <h3>Equipe</h3>
+    <label for=equipe>Uma lista dos membros da equipe da instituição, incluindo seus nomes e sobrenomes, cargos, responsabilidades e informações sobre suas experiências profissionais anteriores:</label>
+    <textarea rows=6 id=equipe placeholder="
+Nome:
+Cargo:
+Responsabilidades:
+Experiência Profissional Anterior:" required></textarea>
+
+<button type="button" onclick="adicionarFundador()">Adicionar Equipe</button>
+
+</div>
+
+
+<div>
+
+<label for=equipe>Por favor, preencha os campos acima com as informações da Instituição de Ensino.
+
+    Após concluir, clique no botão.
+</label>
+<button type="button" onclick="adicionarFundador()">Concluído</button>
+
+    </div>
+</div>
+
+
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
