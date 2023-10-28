@@ -1,13 +1,14 @@
 :root {
 	--roxo: #763DF2;
-	--branca: #fff;
+	--preto: #000;
+	--branco: #fff;
 	--cinza: #f2f2f2;
 	--cinza-claro: #fafafa;
 	--verde: #0e0;
 	--verde-claro: #0f0;
 	--verde-escuro: #0d0;
 }
-h1, h2, h3, title {	font-family: "graphie bold", sans-serif; }
+h2, h3 { font-family: "graphie bold", sans-serif; }
 body {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0rem;
@@ -15,34 +16,40 @@ body {
 }
 .navbar {
 	background-color: var(--roxo);
+	max-height: 15%;
+	width: 100%;
 	flex-wrap: nowrap;
-	max-height: 10%;
-	max-width: 100%;
+	justify-content: flex-end;
 }
-#brand-logo { width: 8em; }
+#brand-logo { max-width: 30%; }
 
-#item-home { height: 1.7em; }
+a { color: var(--branco); font-size: 80%; }
+a:hover { color: var(--preto); }
 
-a { color: var(--branca); font-size: 80%; }
+h2, .functs { text-align: center; }
 
-h2 { text-align: center; font-size: 170%; padding-top: 3%; }
+h2 { font-size: 170%; padding-top: 3%; }
 
-#id-cad-startup { top: 15%; background-color: var(--cinza-claro); margin: 5%; }
+#id-cad-startup { background-color: var(--cinza-claro); margin: 5%; }
 
 #id-cad-startup, .col-md-5 { max-width: 90%; }
 
-.form-row { justify-content: center; margin: 0%; }
+.form-row, .functs { justify-content: center; margin: 0.1%; }
 
-.col-md-5 { margin: 3% 1% 3% 1%; }
+.col-md-5 { margin: 3% 1% 2% 1%; }
 
-textarea { margin-top: 1%; }
+input { margin-bottom: 2%; }
+
+textarea { height: auto; margin-top: 1.5%; }
 
 .setor { padding-left: 5%; }
 
-button { margin: 10px; overflow: hidden;  }
+.cadastros { margin: 1% 6% 1% 6%; width: 88%; }
 
-.fundador, #btn-fundador { margin: 0% 5% 1% 5%; width: 85%; }
+button { margin: 10px; overflow: auto; }
 
-.btn-primary { background-color: var(--verde); border-color: var(--verde); }
+.btn-all, #novo-fundador,
+#novo-investidor, #nova-equipe { width: 100%; }
 
-.btn-primary:hover { background-color: var(--verde-claro); border-color: var(--verde-escuro); }
+.btn-green { background-color: var(--verde); border-color: var(--verde-claro); }
+.btn-green:hover { background-color: var(--verde-claro); border-color: var(--verde-escuro); }
