@@ -8,22 +8,32 @@
         <title>TomorrowLab - Cadastro de Startup</title>
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel=stylesheet href=startup-styles.css>
+        <link rel="stylesheet" href="startup-styles.css">
         <script src="startup-script.js"></script>
     </head>
     <body>
         <nav class="navbar startup">
-            <a href="#"><img id=brand-logo src="img/logo-tomorrow2x.png" alt="TomorrowLab Venture Studio"></a>
+            <a href="#"><img id=brand-logo src="img/logo-tomorrow2x.png" alt="TomorrowLab Venture Studio."></a>
             <div class="navbar item">
                 <a class=nav-link href="#">HOME</a>
                 <a class=nav-link href="#">PORTFÓLIO</a>
             </div>
         </nav>
-        <div id=id-cad-startup>
-            <h2>Cadastre sua Startup</h2>
-            <form action=script.js method=post name=formStartup>
+        <div class="container cad-startup">
+            <div class="row topo">
+                <div class="col-4 col-sm-4 col-lg-4 col-xl-4 esquerdo">
+                    <div class=row>
+                        <div id=img-tomorrow>
+                            <img id=tomorrow-space src=img/space/tomorrow-space.png alt="Engrenagens e uma lâmpada."></div>
+                        <div id=boas-vindas>
+                            Bem-vindo ao<br><span id='texto-ciano'>Tomorrow</span><span id='texto-roxo'> Space</span></div>
+                </div></div>
+                <div class="col-7 col-sm-3 col-lg-3 col-xl-3 direito">
+                    <h6 id=texto-laranja>Cadastre sua Startup</h6></div>
+            </div>
+            <form action="#" method=post id=form-startup>
                 <div class=form-row>
-                    <div class=col-md-5>
+                    <div class="col-md-5">
                         <label for=startup>Nome da startup:</label>
                         <input class=form-control id="startup" required>
                         <label for=desc>Descrição:</label>
@@ -49,16 +59,16 @@
                                 <input class="form-check-input" type="checkbox" id="transp-mobi">
                                 <label class="form-check-label" for=transp-mobi>Transporte e Mobilidade</label></div>
                         </div>
-                        <label class="form-check-label" for=outros>Outros:</label>
+                        <label class="form-check-label" for="outros">Outros:</label>
                         <input class=form-control id="outros">
                     </div>
-                    <div class=col-md-5>
+                    <div class="col-md-5">
                         <label for=website>Website:</label>
                         <input class=form-control type="url" id="website">
                         <label for=email>E-mail:</label>
                         <input class=form-control type="email" placeholder="seuemail@gmail.com" id="email" required>
                         <label for=telefone>Telefone:</label>
-                        <input class=form-control type="tel" placeholder="+55 (00) 0 0000-0000" pattern="+00 (00) 0 0000-0000" id="telefone" required>
+                        <input class=form-control type="tel" placeholder="+55 (00) 0 0000-0000" id="telefone" required>
                         <div class="form-check form-check-inline">
                             <label class=form-check-label for="endereco1">Tem endereço físico:</label>
                             <input class=form-check-input type="radio" id=endereco1>
@@ -109,7 +119,7 @@ Experiência profissional anterior:" required></textarea>
                         <div id=nova-equipe></div>
                         <button type=button class="btn btn-secondary btn-all" onclick="adicionarEquipe()">Adicionar equipe</button></div>
                     <div class="form-row functs">
-                        <h6>Por favor, preencha os campos acima com as informações da startup.<br>Após concluir, envie.</h6>
+                        <h5>Por favor, preencha os campos acima com as informações da startup.<br>Após concluir, envie.</h5>
                         <div class='row functs'>
                             <button type="submit" class="btn btn-green">Enviar</button>
                             <button type=reset class="btn btn-secondary">Limpar</button></div>
