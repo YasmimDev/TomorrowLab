@@ -1,0 +1,77 @@
+/*cores Roxo: #5900ff Branca: #fff  Cinza: #f2f2f2*/
+:root {
+	--roxo: #763DF2;
+	--roxo-texto: #5932EA;
+	--preto: #000;
+	--branco: #fff;
+	--cinza: #f2f2f2;
+	--cinza-claro: #fafafa;
+	--ciano: #0a8;
+	--laranja: #F25C05;
+	--verde: #0e0;
+	--verde-claro: #0f0;
+	--verde-escuro: #0d0;
+}
+h2, h3 { font-family: "graphie bold", sans-serif; }
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0rem;
+	background-color: var(--cinza);
+}
+.navbar {
+	background-color: var(--roxo);
+	max-height: 15%;
+	width: 100%;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+}
+#brand-logo { max-width: 5.5rem; }
+
+a { color: var(--branco); font-size: 80%; }
+a:hover { color: var(--preto); }
+
+h2 { font-size: 170%; padding-top: 3%; }
+
+.cad-empresa { background-color: var(--cinza-claro); margin: 5%; }
+
+.cad-empresa, .col-md-5 { max-width: 90%; }
+
+.topo { align-items: center; margin-left: 2%; }
+
+.col-lg-4 { margin-left: 3%; }
+
+.esquerdo { float: left; }
+
+#img-tomorrow { height: 3.5rem; }
+
+#tomorrow-space, #img-tomorrow { width: 4rem; }
+
+#texto-roxo { color: var(--roxo-texto); }
+#texto-ciano { color: var(--ciano); }
+#texto-laranja { color: var(--laranja); }
+
+.direito, .functs { text-align: center; }
+
+.form-row, .functs { justify-content: center; margin: 0.2%; }
+
+.col-md-5 { margin: 1% 0% 2% 1%; }
+
+input { margin-bottom: 2%; }
+
+textarea { height: auto; margin-top: 1.5%; }
+
+.setor { padding-left: 5%; }
+
+.cadastros { margin: 1% 9% 1% 9%; width: 82%; }
+
+button { margin: 10px; overflow: auto; }
+.btn-all, #novo-produto,
+#novo-serviço, #novo-concorrente,
+#nova-equipe, #novo-investidor { width: 100%; }
+
+.btn-green {
+    background-color: var(--verde);
+    border-color: var(--verde-claro);
+    color: var(--branco);
+}
+.btn-green:hover { background-color: var(--verde-claro); border-color: var(--verde-escuro); }
