@@ -28,7 +28,9 @@
                         <div id=boas-vindas>
                             Bem-vindo ao<br><span id='texto-ciano'>Tomorrow</span><span id='texto-roxo'> Space</span></div>
                 </div></div>
-
+                <div class="col-7 col-sm-3 col-lg-3 col-xl-3 col-md-5 direito">
+                    <h6 id=texto-laranja>Cadastre sua Empresa</h6>
+                </div>
             </div>
             <form action="#" method=post id=form-empresa>
                 <div class=form-row>
@@ -36,18 +38,21 @@
 
                         <label for=empresa>Nome da Empresa:</label>
                         <input class=form-control id="empresa" required>
+
                         <label for=cnpj>CNPJ:</label>
-                        <input class=form-control type="cnpj" placeholder="00.000.000/000-00" id="cnpj" required>
+                        <input class=form-control type="number" placeholder="00.000.000/000-00" id="cnpj"></div>
 
                         <div class="form-check form-check-inline">
-                            <label class=form-check-label for="endereco1">Tem endereço físico:</label>
+                            <label class=form-check-label for="endereco1">Tem endereço físico:</label><br>
                             <input class=form-check-input type="radio" id=endereco1>
                             <label class=form-check-label for=endereco1>Sim</label></div>
                         <div class="form-check form-check-inline">
                             <input class=form-check-input type="radio" id=endereco2>
-                            <label class=form-check-label for=endereco2>Não</label></div>
-
-                        <br><label for=estado>Estado:</label>
+                            <label class=form-check-label for=endereco2>Não</label>
+                        </div>
+                
+                
+                        <label for=estado>Estado:</label>
                         <input class=form-control id="estado">
                         <label for=cidade>Cidade:</label>
                         <input class=form-control id="cidade">
@@ -57,9 +62,9 @@
                         <input class=form-control id="rua">
                         <label for=cep>CEP:</label>
                         <input class=form-control type="number" placeholder=00000-00 id="cep"></div>
-
-                    </div>
                     
+                
+                    <div class=form-row-web>
                     <div class="col-md-5">
                         <label for=website>Website:</label>
                         <input class=form-control type="url" id="website">
@@ -67,6 +72,8 @@
                         <input class=form-control type="email" placeholder="seuemail@gmail.com" id="email" required>
                         <label for=telefone>Telefone:</label>
                         <input class=form-control type="tel" placeholder="+55 (00) 0 0000-0000" id="telefone" required>
+                    </div>
+                    
 
                         <label class="form-check-label" for=tecnologia>Setor:</label>
                         <div class="form-row setor">
@@ -90,10 +97,10 @@
                                 <input class="form-check-input" type="checkbox" id="transp-mobi">
                                 <label class="form-check-label" for=transp-mobi>Transporte e Mobilidade</label></div>
                         </div>
-                        <label class="form-check-label" for="outros">Outros:</label><br>
+                        <label class="form-check-label" for="outros">Outros:</label>
                         <input class=form-control id="outros">
                     </div>
-                    
+
 
                     <div class="row cadastros">
                         <h3>Produtos</h3><br>
@@ -109,7 +116,7 @@ Entre outros:" required></textarea>
                     <div class="row cadastros">
                         <h3>Serviços</h3>
                         <label for=serviços>Uma lista dos principais investidores e/ou fontes de financiamento da empresa, incluindo nome, valor inserido, participação na empresa, entre outros:</label>
-                        <textarea class=form-control rows=6 id=serviço 
+                        <textarea class=form-control rows=6 id=serviços 
                         placeholder="Serviços:
 Características:
 Benefícios:
@@ -157,8 +164,8 @@ Entre outros:" required></textarea>
                         <div class='row functs'>
                             <button type="submit" class="btn btn-green">Enviar</button>
                             <button type=reset class="btn btn-secondary">Limpar</button></div>
-                    </div>
                 </div>
             </form></div>
+            </div>
     </body>
 </html>

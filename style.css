@@ -52,9 +52,12 @@ h2 { font-size: 170%; padding-top: 3%; }
 
 .direito, .functs { text-align: center; }
 
-.form-row, .functs { justify-content: center; margin: 0.2%; }
+.form-row, .functs { justify-content: left; margin: 0.2%; }
 
-.col-md-5 { margin: 1% 0% 2% 1%; }
+
+.form-row-web {float: right;  margin: 1% 0% 2% 1%; }
+
+.col-md-5 { margin: 1% 0% 2% 1%; float: left;}
 
 input { margin-bottom: 2%; }
 
