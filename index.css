@@ -1,0 +1,60 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+ 
+  }
+  
+  .agradecimento {
+    text-align: center;
+    background-color: #763DF2; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .agradecimento img {
+    display: block; 
+    margin: 0 auto; 
+    margin-bottom: 20px; 
+
+}
+  
+  .agradecimento h1 {
+    color: #ffff;
+  }
+  
+  .agradecimento p {
+    color: #ffff;
+  }
+  
+  .btn-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #df6e2c;
+    border-radius: 5px;
+  }
+  
+  .btn-link:hover {
+    background-color: #df6e2c;
+  }
+
+  .agradecimento h2 { color: #fff;}
+  
+  .redes-sociais i {
+    font-size: 38px; 
+    margin-right: 10px; 
+  }
+ 
+ 

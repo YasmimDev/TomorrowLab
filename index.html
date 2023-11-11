@@ -1,164 +1,36 @@
 <!DOCTYPE html>
-<html lang=pt-br>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="refresh" content="600">
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Agradecimento</title>
 
-        <title>TomorrowLab - Cadastro de Empresa</title>
-        
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <script src="empresa.js"></script>
-    </head>
-    <body>
-        <nav class="navbar empresa">
-            <a href="#"><img id=brand-logo src="img/logo-tomorrow2x.png" alt="TomorrowLab Venture Studio."></a>
-            <div class="navbar item">
-                <a class=nav-link href="#">HOME</a>
-                <a class=nav-link href="#">PORTFÓLIO</a>
-            </div>
-        </nav>
-        <div class="container cad-empresa">
-            <div class="row topo">
-                <div class="col-4 col-sm-4 col-lg-4 col-xl-4 esquerdo">
-                    <div class=row>
-                        <div id=img-tomorrow>
-                            <img id=tomorrow-space src=img/space.png alt="Engrenagens e uma lâmpada."></div>
-                        <div id=boas-vindas>
-                            Bem-vindo ao<br><span id='texto-ciano'>Tomorrow</span><span id='texto-roxo'> Space</span></div>
-                </div></div>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
 
-            </div>
-            <form action="#" method=post id=form-empresa>
-                <div class=form-row>
-                    <div class="col-md-5 ">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-                        <label for=empresa>Nome da Empresa:</label>
-                        <input class=form-control id="empresa" required>
-                        <label for=cnpj>CNPJ:</label>
-                        <input class=form-control type="cnpj" placeholder="00.000.000/000-00" id="cnpj" required>
+  <link rel="stylesheet" href="index.css">
+  
+</head>
+<body>
 
-                        <div class="form-check form-check-inline">
-                            <label class=form-check-label for="endereco1">Tem endereço físico:</label>
-                            <input class=form-check-input type="radio" id=endereco1>
-                            <label class=form-check-label for=endereco1>Sim</label></div>
-                        <div class="form-check form-check-inline">
-                            <input class=form-check-input type="radio" id=endereco2>
-                            <label class=form-check-label for=endereco2>Não</label></div>
+  <div class="content-container">
+  <div class="agradecimento">
+    <img src="fotos/image 32.png" width="15%" height="15%">
+    <h1>Obrigado por entrar em contato com a Tomorrow Lab.</h1>
+    <h2>Nós recebemos o seu cadastro.</h2>
 
-                        <br><label for=estado>Estado:</label>
-                        <input class=form-control id="estado">
-                        <label for=cidade>Cidade:</label>
-                        <input class=form-control id="cidade">
-                        <label for=bairro>Bairro:</label>
-                        <input class=form-control id="bairro">
-                        <label for=rua>Rua:</label>
-                        <input class=form-control id="rua">
-                        <label for=cep>CEP:</label>
-                        <input class=form-control type="number" placeholder=00000-00 id="cep"></div>
+    <p>Entraremos em contato em breve!</p>
+    <img src="fotos/logo-tomorrow2x (1).png" alt="Venture Studio Image" class="venture-image" width="15%" height="15%">
+    <a href="index.html" class="btn-link">
+        Retornar à página inicial
+      </a> 
+      <div class="redes-sociais">
+  
+        <p>Siga-nos nas redes sociais!</p>
 
-                    </div>
-                    
-                    <div class="col-md-5">
-                        <label for=website>Website:</label>
-                        <input class=form-control type="url" id="website">
-                        <label for=email>E-mail:</label>
-                        <input class=form-control type="email" placeholder="seuemail@gmail.com" id="email" required>
-                        <label for=telefone>Telefone:</label>
-                        <input class=form-control type="tel" placeholder="+55 (00) 0 0000-0000" id="telefone" required>
+        <a href="https://www.linkedin.com/company/tomorrowlabstudio/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.tomorrowlab.studio/" target="_blank"><i class="fas fa-globe"></i></a>
+</div>
 
-                        <label class="form-check-label" for=tecnologia>Setor:</label>
-                        <div class="form-row setor">
-                            <div class="col-6">
-                                <input class="form-check-input" type="checkbox" id="tecnologia">
-                                <label class="form-check-label" for=tecnologia>Tecnologia</label><br>
-                                <input class="form-check-input" type=checkbox id="fintech">
-                                <label class="form-check-label" for=fintech>Fintech</label><br>
-                                <input class="form-check-input" type="checkbox" id="energia">
-                                <label class="form-check-label" for=energia>Energia</label><br>
-                                <input class="form-check-input" type="checkbox" id="e-commerce">
-                                <label class="form-check-label" for=e-commerce>E-commerce</label></div>
-
-                            <div class="col-6">
-                                <input class="form-check-input" type="checkbox" id="saude">
-                                <label class="form-check-label" for=saude>Saúde</label><br>
-                                <input class="form-check-input" type="checkbox" id="educacao">
-                                <label class="form-check-label" for=educacao>Educação</label><br>
-                                <input class="form-check-input" type="checkbox" id="ali-mobi">
-                                <label class="form-check-label" for=ali-mobi>Alimentos e Agricultura</label><br>
-                                <input class="form-check-input" type="checkbox" id="transp-mobi">
-                                <label class="form-check-label" for=transp-mobi>Transporte e Mobilidade</label></div>
-                        </div>
-                        <label class="form-check-label" for="outros">Outros:</label><br>
-                        <input class=form-control id="outros">
-                    </div>
-                    
-
-                    <div class="row cadastros">
-                        <h3>Produtos</h3><br>
-                        <label for=produto>O nome e sobrenome dos fundadores da startup, bem como informações profissionais anteriores e como eles se conheceram.</label>
-                        <textarea class=form-control rows=6 id=produto placeholder="Produtos:
-Características:
-Benefícios:
-Preço:
-Entre outros:" required></textarea>
-                        <div id=novo-produto></div>
-                        <button type=button class="btn btn-secondary btn-all" onclick="adicionarProdutos()">Adicionar Produtos</button></div>
-
-                    <div class="row cadastros">
-                        <h3>Serviços</h3>
-                        <label for=serviços>Uma lista dos principais investidores e/ou fontes de financiamento da empresa, incluindo nome, valor inserido, participação na empresa, entre outros:</label>
-                        <textarea class=form-control rows=6 id=serviço 
-                        placeholder="Serviços:
-Características:
-Benefícios:
-Preço:
-Entre outros:" required></textarea>
-                        <div id=novo-serviço></div>
-                        <button type=button class="btn btn-secondary btn-all" onclick="adicionarServiços()">Adicionar Serviços</button></div>
-
-                    <div class="row cadastros">
-                        <h3>Concorrentes</h3>
-                        <label for=concorrente>Uma lista dos principais investidores e/ou fontes de financiamento da empresa, incluindo nome, valor inserido, participação na empresa, entre outros:</label>
-                        <textarea class=form-control rows=5 id=concorrente 
-                        placeholder="Empresa Concorrente:
-Porte:
-Produtos:
-Serviços oferecidos:" required></textarea>
-                        <div id=novo-concorrente></div>
-                        <button type=button class="btn btn-secondary btn-all" onclick="adicionarConcorrentes()">Adicionar Concorrência</button></div>
-
-                        <div class="row cadastros">
-                        <h3>Equipe</h3>
-                        <label for=equipe>Uma lista dos membros da equipe da startup, incluindo seus nomes e sobrenomes, cargos, responsabilidades e informações sobre suas experiências profissionais anteriores.</label>
-                        <textarea class=form-control rows=5 id=equipe placeholder="Nome:
-Cargo:
-Responsabilidades:
-Experiência profissional anterior:
-Habilidades:
-Competências:" required></textarea>
-                        <div id=nova-equipe></div>
-                        <button type=button class="btn btn-secondary btn-all" onclick="adicionarEquipe()">Adicionar equipe</button></div>
-
-                        <div class="row cadastros">
-                            <h3>Investidores</h3>
-                            <label for=investidores>Uma lista dos membros da equipe da startup, incluindo seus nomes e sobrenomes, cargos, responsabilidades e informações sobre suas experiências profissionais anteriores.</label>
-                            <textarea class=form-control rows=5 id=investidores placeholder="Nome:
-Responsabilidades:
-Valor investido:
-Participação na Empresa:
-Entre outros:" required></textarea>
-                            <div id=novo-investidor></div>
-                            <button type=button class="btn btn-secondary btn-all" onclick="adicionarInvestidor()">Adicionar Investidor</button></div>
-                
-                    <div class="form-row functs">
-                        <h5>Por favor, preencha os campos acima com as informações da empresa.<br>Após concluir, envie.</h5>
-                        <div class='row functs'>
-                            <button type="submit" class="btn btn-green">Enviar</button>
-                            <button type=reset class="btn btn-secondary">Limpar</button></div>
-                    </div>
-                </div>
-            </form></div>
-    </body>
+</body>
 </html>
