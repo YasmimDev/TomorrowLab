@@ -11,7 +11,7 @@
 	--verde-claro: #0f0;
 	--verde-escuro: #0d0;
 }
-h2, h3 { font-family: "graphie bold", sans-serif; }
+h2, h3 { font-family: "Graphie bold", sans-serif; }
 body {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0rem;
@@ -19,7 +19,6 @@ body {
 }
 .navbar {
 	background-color: var(--roxo);
-	max-height: 15%;
 	width: 100%;
 	flex-wrap: nowrap;
 	justify-content: flex-end;
@@ -29,17 +28,9 @@ body {
 a { color: var(--branco); font-size: 80%; }
 a:hover { color: var(--preto); }
 
-h2 { font-size: 170%; padding-top: 3%; }
-
 .cad-startup { background-color: var(--cinza-claro); margin: 5%; }
 
-.cad-startup, .col-md-5 { max-width: 90%; }
-
-.topo { align-items: center; margin-left: 2%; }
-
-.col-lg-4 { margin-left: 3%; }
-
-.esquerdo { float: left; }
+.topo { align-items: center; margin: 0% 0% 2% 4%; }
 
 #img-tomorrow { height: 3.5rem; }
 
@@ -49,21 +40,19 @@ h2 { font-size: 170%; padding-top: 3%; }
 #texto-ciano { color: var(--ciano); }
 #texto-laranja { color: var(--laranja); }
 
-.direito, .functs { text-align: center; }
+.form-row { justify-content: space-evenly; }
 
-.form-row, .functs { justify-content: center; margin: 0.2%; }
+.direito { padding-left: 5%; }
 
-.col-md-5 { margin: 1% 0% 2% 1%; }
+.direito, .functs { text-align: center; margin: 1%; }
 
-input { margin-bottom: 2%; }
+input, textarea, .cadastros { margin: 1% 0% 1.5% 0%; }
 
-textarea { height: auto; margin-top: 1.5%; }
+.setor { padding: 3% 0% 6% 1.2rem; }
 
-.setor { padding-left: 5%; }
+.cadastros { width: 90%; }
 
-.cadastros { margin: 1% 9% 1% 9%; width: 82%; }
-
-button { margin: 10px; overflow: auto; }
+button { margin: 0% 15px 0% 15px; overflow: auto; }
 .btn-all, #novo-fundador,
 #novo-investidor, #nova-equipe { width: 100%; }
 
