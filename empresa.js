@@ -45,4 +45,4 @@ function adicionarProdutos() {
     novoProduto.placeholder = 'Nome:\nCaracterísticas:\nBenefícios:\nPreço:\nEntre outros:';
 
     return adicionarAtributos([div, novoProduto]);
-}
+  }
