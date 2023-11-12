@@ -1,8 +1,9 @@
 /*cores Roxo: #5900ff Branca: #fff  Cinza: #f2f2f2*/
 :root {
 	--roxo: #763DF2;
+	--roxo-diferente: #5f1feb;
 	--roxo-texto: #5932EA;
-	--preto: #000;
+	--preto: #ffffff;
 	--branco: #fff;
 	--cinza: #f2f2f2;
 	--cinza-claro: #fafafa;
@@ -25,7 +26,22 @@ body {
 	flex-wrap: nowrap;
 	justify-content: flex-end;
 }
-#brand-logo { max-width: 5.5rem; }
+#brand-logo { max-width: 10rem; }
+
+h6 { font-size: 150%; padding-top: 1%;  font-weight: bolder;}
+
+
+#boas-vindas {
+	margin-left: 10px; font-size: 23px;
+  }
+
+  .row {
+	margin-top: 1rem;
+}
+
+.form-control:focus {  box-shadow: 0 0 5px rgba(118, 61, 242, 0.7);   border-color: rgba(118, 61, 242, 0.7); 
+}
+
 
 a { color: var(--branco); font-size: 80%; }
 a:hover { color: var(--preto); }
@@ -52,26 +68,36 @@ h2 { font-size: 170%; padding-top: 3%; }
 
 .direito, .functs { text-align: center; }
 
-.form-row, .functs { justify-content: center; margin: 0.2%; }
+.form-row, .functs { justify-content: space-evenly; margin: 0.1%; }
 
 .col-md-5 { margin: 1% 0% 2% 1%; }
 
 input { margin-bottom: 2%; }
 
-textarea { height: auto; margin-top: 1.5%; }
+textarea { height: auto; margin-top: 1.5%; resize: none; }
 
 .setor { padding-left: 5%; }
 
-.cadastros { margin: 1% 9% 1% 9%; width: 82%; }
+.cadastros { margin: 1% 9% 1% ; width: 82%; }
+
+.form-row.functs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1rem;
+	gap: 1rem;
+	text-align: center;
+	margin-bottom: 3rem;
+}
 
 button { margin: 10px; overflow: auto; }
 .btn-all, #novo-produto,
 #novo-serviço, #novo-concorrente,
 #nova-equipe, #novo-investidor { width: 100%; }
 
+button { margin: 10px; overflow: auto; }
+
 .btn-green {
-    background-color: var(--verde);
-    border-color: var(--verde-claro);
-    color: var(--branco);
+    b.btn-green { background-color: var(--roxo-diferente); border-color: var(--roxo-diferente);cursor: pointer; color: var(--branco); }
 }
-.btn-green:hover { background-color: var(--verde-claro); border-color: var(--verde-escuro); }
+.btn-green:hover { background-color: var(--roxo-diferente); border-color: var(--roxo-diferente); cursor: pointer; }

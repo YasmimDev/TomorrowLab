@@ -15,8 +15,9 @@
         <nav class="navbar empresa">
             <a href="#"><img id=brand-logo src="img/logo-tomorrow2x.png" alt="TomorrowLab Venture Studio."></a>
             <div class="navbar item">
-                <a class=nav-link href="#">HOME</a>
-                <a class=nav-link href="#">PORTFÓLIO</a>
+                <a class=nav-link href="#"><b>HOME</b></a>
+                <a class=nav-link href="#"><b>PORTFÓLIO</b></a>
+                <a class=nav-link href="#"><b>LOGIN</b></a>
             </div>
         </nav>
         <div class="container cad-empresa">
@@ -26,9 +27,11 @@
                         <div id=img-tomorrow>
                             <img id=tomorrow-space src=img/space.png alt="Engrenagens e uma lâmpada."></div>
                         <div id=boas-vindas>
-                            Bem-vindo ao<br><span id='texto-ciano'>Tomorrow</span><span id='texto-roxo'> Space</span></div>
+                            <b>Bem-vindo ao</b><br><span id='texto-ciano'><b>Tomorrow</b></span><span id='texto-roxo'><b>Space</b></span></div>
                 </div></div>
-
+                <div class="col-7 col-sm-3 col-lg-3 col-xl-3 col-md-5 direito">
+                    <h6 id=texto-laranja><b>Cadastre sua Empresa</b></h6>
+                </div>
             </div>
             <form action="#" method=post id=form-empresa>
                 <div class=form-row>
@@ -36,17 +39,18 @@
 
                         <label for=empresa>Nome da Empresa:</label>
                         <input class=form-control id="empresa" required>
+
                         <label for=cnpj>CNPJ:</label>
-                        <input class=form-control type="cnpj" placeholder="00.000.000/000-00" id="cnpj" required>
+                        <input class=form-control type="text" placeholder="00.000.000/000-00" id="cnpj">
 
                         <div class="form-check form-check-inline">
-                            <label class=form-check-label for="endereco1">Tem endereço físico:</label>
+                            <label class=form-check-label for="endereco1">Tem endereço físico:</label><br>
                             <input class=form-check-input type="radio" id=endereco1>
                             <label class=form-check-label for=endereco1>Sim</label></div>
                         <div class="form-check form-check-inline">
                             <input class=form-check-input type="radio" id=endereco2>
-                            <label class=form-check-label for=endereco2>Não</label></div>
-
+                            <label class=form-check-label for=endereco2>Não</label></div><br>
+                
                         <br><label for=estado>Estado:</label>
                         <input class=form-control id="estado">
                         <label for=cidade>Cidade:</label>
@@ -56,10 +60,8 @@
                         <label for=rua>Rua:</label>
                         <input class=form-control id="rua">
                         <label for=cep>CEP:</label>
-                        <input class=form-control type="number" placeholder=00000-00 id="cep"></div>
-
-                    </div>
-                    
+                        <input class=form-control type="text" placeholder=00000-00 id="cep"></div>
+                                        
                     <div class="col-md-5">
                         <label for=website>Website:</label>
                         <input class=form-control type="url" id="website">
@@ -67,7 +69,7 @@
                         <input class=form-control type="email" placeholder="seuemail@gmail.com" id="email" required>
                         <label for=telefone>Telefone:</label>
                         <input class=form-control type="tel" placeholder="+55 (00) 0 0000-0000" id="telefone" required>
-
+                    
                         <label class="form-check-label" for=tecnologia>Setor:</label>
                         <div class="form-row setor">
                             <div class="col-6">
@@ -90,14 +92,50 @@
                                 <input class="form-check-input" type="checkbox" id="transp-mobi">
                                 <label class="form-check-label" for=transp-mobi>Transporte e Mobilidade</label></div>
                         </div>
-                        <label class="form-check-label" for="outros">Outros:</label><br>
+
+                        <br><label class="form-check-label" for="outros">Outros:</label>
                         <input class=form-control id="outros">
+
+                        <label class="form-check-label" for=tecnologia>Porte da Empresa:</label>
+                        <div class="form-row porte">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Pequena</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Média</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">Grande</label>
+                              </div>
                     </div>
-                    
+                </div>
+
+                <div class="row cadastros">
+                    <h3>Estratégia de Marketing</h3>
+                    <label for=mkt></label>
+                    <textarea class=form-control rows=5 id=mkt placeholder="Estratégia de Marketing:
+Canais de divulgação:
+Público-alvo:
+Mensagens chave:
+Entre outros:" required></textarea>
+                </div>
+
+<div class="row cadastros">
+    <h3>Desafios</h3>
+    <label for=desafio></label>
+    <textarea class=form-control rows=4 id=desafio placeholder="Concorrência:
+Regulação:
+Acesso a capital:
+Entre outros:" required></textarea>
+</div>
+
 
                     <div class="row cadastros">
-                        <h3>Produtos</h3><br>
-                        <label for=produto>O nome e sobrenome dos fundadores da startup, bem como informações profissionais anteriores e como eles se conheceram.</label>
+                        <h3>Produtos</h3>
+                        <label for=produto></label>
                         <textarea class=form-control rows=6 id=produto placeholder="Produtos:
 Características:
 Benefícios:
@@ -108,8 +146,8 @@ Entre outros:" required></textarea>
 
                     <div class="row cadastros">
                         <h3>Serviços</h3>
-                        <label for=serviços>Uma lista dos principais investidores e/ou fontes de financiamento da empresa, incluindo nome, valor inserido, participação na empresa, entre outros:</label>
-                        <textarea class=form-control rows=6 id=serviço 
+                        <label for=serviços></label>
+                        <textarea class=form-control rows=5 id=serviços 
                         placeholder="Serviços:
 Características:
 Benefícios:
@@ -120,8 +158,8 @@ Entre outros:" required></textarea>
 
                     <div class="row cadastros">
                         <h3>Concorrentes</h3>
-                        <label for=concorrente>Uma lista dos principais investidores e/ou fontes de financiamento da empresa, incluindo nome, valor inserido, participação na empresa, entre outros:</label>
-                        <textarea class=form-control rows=5 id=concorrente 
+                        <label for=concorrente></label>
+                        <textarea class=form-control rows=4 id=concorrente 
                         placeholder="Empresa Concorrente:
 Porte:
 Produtos:
@@ -131,8 +169,8 @@ Serviços oferecidos:" required></textarea>
 
                         <div class="row cadastros">
                         <h3>Equipe</h3>
-                        <label for=equipe>Uma lista dos membros da equipe da startup, incluindo seus nomes e sobrenomes, cargos, responsabilidades e informações sobre suas experiências profissionais anteriores.</label>
-                        <textarea class=form-control rows=5 id=equipe placeholder="Nome:
+                        <label for=equipe></label>
+                        <textarea class=form-control rows=6 id=equipe placeholder="Nome:
 Cargo:
 Responsabilidades:
 Experiência profissional anterior:
@@ -143,7 +181,7 @@ Competências:" required></textarea>
 
                         <div class="row cadastros">
                             <h3>Investidores</h3>
-                            <label for=investidores>Uma lista dos membros da equipe da startup, incluindo seus nomes e sobrenomes, cargos, responsabilidades e informações sobre suas experiências profissionais anteriores.</label>
+                            <label for=investidores></label>
                             <textarea class=form-control rows=5 id=investidores placeholder="Nome:
 Responsabilidades:
 Valor investido:
@@ -153,12 +191,18 @@ Entre outros:" required></textarea>
                             <button type=button class="btn btn-secondary btn-all" onclick="adicionarInvestidor()">Adicionar Investidor</button></div>
                 
                     <div class="form-row functs">
-                        <h5>Por favor, preencha os campos acima com as informações da empresa.<br>Após concluir, envie.</h5>
+                        <h5>Por favor, preencha os campos acima com as informações da empresa.<br>Após concluir, envie.</h5><br>
                         <div class='row functs'>
                             <button type="submit" class="btn btn-green">Enviar</button>
-                            <button type=reset class="btn btn-secondary">Limpar</button></div>
+                            <button type=reset class="btn btn-secondary">Limpar</button>
+                            <button class="btn btn-sm btn-primary rounded-circle position-fixed bottom-0 end-0 translate-middle d-none" onclick="scrollToTop()" id="back-to-up">
+                                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                              </button>
+                        </div>
                     </div>
                 </div>
-            </form></div>
+            </form>
+        </div>
+
     </body>
 </html>
