@@ -97,7 +97,5 @@ button { margin: 10px; overflow: auto; }
 
 button { margin: 10px; overflow: auto; }
 
-.btn-green {
-    b.btn-green { background-color: var(--roxo-diferente); border-color: var(--roxo-diferente);cursor: pointer; color: var(--branco); }
-}
-.btn-green:hover { background-color: var(--roxo-diferente); border-color: var(--roxo-diferente); cursor: pointer; }
+.btn-green { background-color: var(--roxo); border-color: var(--roxo);cursor: pointer; color: var(--branco); }
+.btn-green:hover { background-color: var(--roxo-diferente); border-color: var(--roxo-diferente); cursor: pointer;}
