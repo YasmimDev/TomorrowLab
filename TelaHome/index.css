@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background: url('img/foto..jpg') center/cover no-repeat;
+
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #763df2;
+    clip-path: circle(52% at bottom right);
+
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+header .logo{
+  
+    position: relative;
+    max-width: 150px;
+    margin-left: 260px; 
+
+}
+header .navegation ul{
+    position: relative;
+    display: flex;
+   
+}
+header .navegation  li{
+    list-style: none;
+}
+header .navegation li a{
+    display: inline-block;
+    color: #763df2;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 100px;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .text{
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+.content .text h2{
+    color: #763df2;
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height: 2.5em;
+    font-weight: 700;
+}
+.content .text h2 span{
+    display: inline-block;
+    background: linear-gradient(45deg, #763df2, #F25C05);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.content .text p{
+    color: #763df2;
+    font-size: 1.7rem;
+}
+.content .text a{
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 25px;
+    background: #763df2;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+    padding: 20px 30px; 
+    font-size: 18px;
+}
+.content .text a:hover{
+    transform: translateY(-10px);
+}
+.icons{
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons li{
+    list-style: none;
+}
+.icons li a{
+    display: inline-block;
+    margin-left: 45px;
+    background: #763df2;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition:  0.3s ease-in-out;
+}
+.icons li a:hover{
+    background: #763df2;
+    transform: translateY(-10px);
+}
+.icons li a img{
+    filter: invert(1);
+    transform: scale(0.5);
+}
+.boxImg {
+    width: 100%; /* Ajuste a largura conforme necessário */
+    height: auto; /* Isso garante que a proporção original da imagem seja mantida */
+    display: block; /* Remove espaço extra abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem na horizontal */
+    z-index: 2; /* Z-index maior que o do círculo */
+    position: relative;
+}
+
+.boxImg {
+    position: fixed;
+    right: 20px;
+    left: 887px; /* Alterado de 'right' para 'left' */
+    bottom: 0rem;
+
+}
+
+.img1 {
+    width: 60%;
+    height: 50%;
+}
+
