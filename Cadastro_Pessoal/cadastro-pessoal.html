@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="600">
+
+        <title>TomorrowLab - Cadastro Pessoal</title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel=stylesheet href=pessoal-styles.css>
+        <script src="pessoal-script.js"></script>
+    </head>
+    <body>
+        <nav class="navbar startup">
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwivw5SiuLqCAxWlJrkGHcKeCyMQFnoECAkQAQ&url=https%3A%2F%2Fwww.tomorrowlab.studio%2F&usg=AOvVaw2HSR_0CT6_1EfgvNr68HJU&opi=89978449"><img id=brand-logo src="img/logo-tomorrow2x.png" alt="TomorrowLab Venture Studio"></a>
+            <div class="navbar item">
+                <a class=nav-link href="#">HOME</a>
+                <a class=nav-link href="#">CADASTRE-SE</a>
+                <a class=nav-link href="#">LOGIN</a>
+
+            </div>
+        </nav>
+
+        <div id=id-cad-startup>
+            
+            <div class="container cad-startup">
+                <div class="row topo">
+                    <div class="col-4 col-sm-4 col-lg-4 col-xl-4 esquerdo">
+                        <div class=row>
+                            <div id=img-tomorrow>
+                                <img id=tomorrow-space src=img/space/tomorrow-space.png alt="Engrenagens e uma lâmpada."></div>
+                            <div id=boas-vindas>
+                                Bem-vindo ao<br><span id='texto-ciano'>Tomorrow</span><span id='texto-roxo'> Space</span></div>
+                    </div></div>
+                    <div class="col-7 col-sm-3 col-lg-3 col-xl-3 direito">
+                        <h6 id=texto-laranja ><strong>Cadastro Pessoal</strong></h6></div>
+                </div>
+    
+            <form action=script.js method=post name=formStartup>
+                <div class=form-row>
+                    <div class=col-md-5>
+                        <label for=startup>Nome completo:</label>
+                        <input class=form-control id="startup" required>
+                        <label for=startup>Cargo/Função</label>
+                        <input class=form-control id="startup" required>
+                        <label for=desc>Experiência:</label>
+                        <textarea class=form-control rows=5 placeholder="As experiências profissionais anteriores relevantes do fundador, incluindo o nome da empresa, o cargo e o período trabalhado." id="desc" required></textarea><br>
+                        <label for=desc>Habilidades:</label>
+                        <textarea class=form-control rows=5 placeholder="As habilidades e competências técnicas do fundador que são relevantes para a startup." id="desc" required></textarea><br>
+                        <label for=desc>Formação acadêmica:</label>
+                        <textarea class=form-control rows=5 placeholder="Descreva a formação acadêmica do fundador incluindo o nome da instituição, o curso e o periodo de graduação." id="desc" required></textarea><br>
+                    </div>
+                    <div class=col-md-5>
+                        <label for=email>E-mail:</label>
+                        <input class=form-control type="email" placeholder="seuemail@gmail.com" id="email" required>
+                        <label for=telefone>Telefone:</label>
+                        <input class=form-control type="tel" placeholder="+55 (00) 0 0000-0000" pattern="+00 (00) 0 0000-0000" id="telefone" required>
+                        <p class="redessociais">Redes sociais</p>
+                        <p> Por favor, forneça os links para as contas de redes sociais do fundador, como Linkedin, Twitter, etc </p>
+                        <label for=linkedin>Linkedin:</label>
+                        <input class=form-control type="url" placeholder="www.linkedin.com" id="linkedin" required>
+                        <label for=twitter>Twitter:</label>
+                        <input class=form-control type="url" placeholder="www.twitter.com" id="twitter" required>
+                        <label for=facebook>Facebook:</label>
+                        <input class=form-control type="url" placeholder="www.facebook.com" id="facebook" required>
+                        <label for=Instagram>Instagram:</label>
+                        <input class=form-control type="url" placeholder="www.instagram.com" id="instagram" required>
+                        <label for=github>GitHub:</label>
+                        <input class=form-control type="url" placeholder="wwwgithub.com" id="github" required>
+                        <label for=outras>Outras redes sociais relevantes para nichos específicos:</label>
+                        <input class=form-control type="url" placeholder="forneça o URL da sua rede social" id="outras" required>
+
+            </form>    
+        </div>
+        <div class="row cadastros">
+            <div class="form-row functs">
+                <h6>Por favor, preencha os campos acima com as informações da startup.<br>Após concluir, envie.</h6>
+                <div class='row functs'>
+                    <button type="submit" class="btn btn-green">Enviar</button>
+                    <button type=reset class="btn btn-secondary">Limpar</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
