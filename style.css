@@ -124,7 +124,7 @@ p {
 #Personas-Box .Box-Personas {
     width: 346px;
     height: 540px;
-    background-color: #2E61ED;
+    background-color: #763DF2;
     text-align: center;
     padding: 10px 10px;
     border: 1px solid #20F087;
@@ -133,10 +133,28 @@ p {
     position: relative;
 }
 
-#Personas-Box .Box-Personas h2 {
+#Personas-Box .title-1 {
     position: absolute;
     top: 15%; 
-    left: 50%;
+    left: 48%;
+}
+
+#Personas-Box .title-2 {
+    position: absolute;
+    top: 15%; 
+    left: 48%;
+}
+
+#Personas-Box .title-3 {
+    position: absolute;
+    top: 15%; 
+    left: 35%;
+}
+
+#Personas-Box .title-4 {
+    position: absolute;
+    top: 15%; 
+    left: 43%;
 }
 
 #Personas-Box .Box-Icons {
@@ -161,3 +179,36 @@ p {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+#Over-Side {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%; 
+    left: 0%;
+}
+
+#Over-Side p {
+    text-align: justify;
+    line-height: 100%;
+}
+
+#Over-Side button {
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    position: absolute;
+    margin-top: 90%;
+    background-color: #20F087;
+    width: 250px;
+    height: 40px;
+    border: 1px solid #20F087;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#Over-Side button:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
+  } 
