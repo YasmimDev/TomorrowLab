@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="600">
+
+        <title>Cadastro Instituição</title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+       
+        <link rel="stylesheet" href="index.css">
+
+
+    </head>
+    <body>
+        <nav class="navbar instituicao">
+            <a href="#"><img id=brand-logo src="img/logo-tomorrow2x (1).png" alt="TomorrowLab Venture Studio"></a>
+            <div class="navbar item">
+                <a class=nav-link href="#">HOME</a>
+                <a class=nav-link href="#">CADASTRE-SE</a>
+                <a class=nav-link href="#">LOGIN</a>
+            </div>
+        </nav>
+
+        <div id=id-cad-instituicao>
+          
+          <div class="row topo">
+            <div class="col-4 col-sm-4 col-lg-4 col-xl- esquerdo">
+                <div class=row>
+                    <div id=img-tomorrow>
+                        <img id=tomorrow-space src="img/tomorrow-space..png"alt="Engrenagens e uma lâmpada."></div>
+                    <div id=boas-vindas>
+                        Bem-vindo ao<br><span id='texto-ciano'>Tomorrow</span><span id='texto-roxo'> Space</span></div>
+            </div>
+        </div>
+            <div class="col-7 col-sm-3 col-lg-3 col-xl-3 direito">
+                <h6 id=texto-laranja>Cadastre sua Instituição</h6></div>
+        </div>
+                <div class=form-row>
+                    <div class=col-md-5>
+                    <div class=col-md-5>
+                        <label for=instituicao>Nome da Instituição:</label>
+                        <input class=form-control id="instituicao" required>
+
+                        <div class="form-check form-check-inline">
+                            <label class=form-check-label for="endereco1">Tem endereço físico:</label>
+                            <input class=form-check-input type="radio" id=endereco1>
+                            <label class=form-check-label for=endereco1>Sim</label></div>
+                        <div class="form-check form-check-inline">
+                            <input class=form-check-input type="radio" id=endereco2>
+                            <label class=form-check-label for=endereco2>Não</label></div>
+
+                                <br><label for=rua>Rua e número:</label>
+                                <input class=form-control id="rua">
+                                <label for=cidade>Bairro:</label>
+                                <input class=form-control id="bairro"><label for=cep>CEP:</label>
+                                <input class=form-control placeholder=00-000-000 id="cep">
+                                <label for=bairro>Cidade:</label>
+                                <input class=form-control id="cidade">
+                                <label for=rua>Estado:</label>
+                                <input class=form-control id="estado">
+                                
+                                <label id="meuLabel"class="form-check-label" for=fundamental>Níveis de Ensino:</label>
+
+                                <div class="form-row ensino">
+
+                            <div class="col-5">
+
+                                
+                                <input class="form-check-input" type="checkbox" id="fundamental">
+                                <label class="form-check-label" for=tecnologia>Fundamental</label><br>
+                                <input class="form-check-input" type=checkbox id="tecnologo">
+                                <label class="form-check-label" for=fintech>Tecnólogo</label><br>
+                                <input class="form-check-input" type="checkbox" id="Médio">
+                                <label class="form-check-label" for=energia>Médio</label><br>
+                                <input class="form-check-input" type="checkbox" id="tecnico">
+                                <label class="form-check-label" for=e-commerce>Técnico</label></div>
+
+                            <div class="col-6">
+                                <input class="form-check-input" type="checkbox" id="bacharelado">
+                                <label class="form-check-label" for=saude>Bacharelado</label><br>
+                                <input class="form-check-input" type="checkbox" id="mestrado">
+                                <label class="form-check-label" for=educacao>Mestrado</label><br>
+                                <input class="form-check-input" type="checkbox" id="licenciatura">
+                                <label class="form-check-label" for=ali-mobi>Licenciatura</label><br>
+                                <input class="form-check-input" type="checkbox" id="doutorado">
+                                <label class="form-check-label" for=transp-mobi>Doutorado</label></div>
+                        </div>
+                        
+                        <label class="form-check-label" for=outros>Outros:</label>
+                        <input class=form-control id="outros1">
+                    </div>
+</div>
+
+
+                    <div class=col-md-5>
+                        <label for=website>Website:</label>
+                        <input class=form-control type="url" id="website">
+                        <label for=email>E-mail:</label>
+                        <input class=form-control type="email" placeholder="seuemail@gmail.com" id="email" required>
+                        <label for=telefone>Telefone:</label>
+                        <input class=form-control type="tel" placeholder="+55 (00) 0 0000-0000" pattern="+00 (00) 0 0000-0000" id="telefone" required>
+
+
+                        <label class="form-check-label" for=escola>Tipo de Instituição:</label>
+
+                        <div class="form-row ensino">
+
+                            <div class="col-5">
+                                
+                                <input class="form-check-input" type="checkbox" id="escola">
+                                <label class="form-check-label" for=tecnologia>Escola</label><br>
+                                <input class="form-check-input" type=checkbox id="colegio">
+                                <label class="form-check-label" for=fintech>Colégio</label><br>
+                                <input class="form-check-input" type="checkbox" id="universidade">
+                                <label class="form-check-label" for=energia>Universidade</label><br>
+                                <input class="form-check-input" type="checkbox" id="centro">
+                                <label class="form-check-label" for=e-commerce>Centro Tecnológico</label></div>
+
+                            <div class="col-6">
+                                <input class="form-check-input" type="checkbox" id="faculdade">
+                                <label class="form-check-label" for=saude>Faculdade</label><br>
+                                <input class="form-check-input" type="checkbox" id="instituto">
+                                <label class="form-check-label" for=educacao>Instituto Federal</label><br>
+                                <input class="form-check-input" type="checkbox" id="universitario">
+                                <label class="form-check-label" for=ali-mobi>Centro Universitário</label><br></div>
+                               
+                        </div>
+                        <label class="form-check-label" for=outros>Outros:</label>
+                        <input class=form-control id="outros">
+                        <div class="input-box">
+
+                            <h5>Crusos Oferecidos</h5>
+
+                            <textarea class=form-control rows=6 id=curriculares placeholder="Os cursos oferecidos pela instituição, incluindo o nome do curso, grau e duração, logo após faça um upload da grade curricular do curso." required></textarea>
+
+
+                          </div>
+
+                          <form>
+                            <div class="form-group">
+                              <label for="exampleFormControlFile1">Grade Curricular</label>
+                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            </div>
+                          </form>
+
+                          </div>
+                    </div>
+
+                    
+                    <div class="row cadastros">
+                        <h3>Corpo docente</h3>
+  
+                      <textarea class=form-control rows=14 id=docente placeholder="Uma lista dos instrutores e professores da instituição, incluindo nomes, cargos, formação academica, experiência profissional e área de atuação
+
+Nome:
+Cargo:
+Formação academica:
+Experiência profissional:
+Área de atuação:
+
+Nome:
+Cargo:
+Formação academica:
+Experiência profissional:
+Área de atuação:"required></textarea>
+                        
+<form>
+    <div class="form-group">
+      <label for="exampleFormControlFile1">Corpo Docente</label>
+      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+    </div>
+  </form>
+
+</div>
+                
+<div class="col-3">
+<h2>Infraestrutura</h2>
+</div>
+
+<div class="col-7">
+      <div class="form-row infraestrutura">
+         <div class="checkbox-container">
+        <div class="row checkboxes-row">
+
+            <div class="col-4">
+                <input class="form-check-input" type="checkbox" id="sala">
+                <label class="form-check-label" for=escola>Salas de aula</label><br>
+                <input class="form-check-input" type="checkbox" id="laboratorio">
+                <label class="form-check-label" for=escola>Laboratório</label><br>
+                <input class="form-check-input" type="checkbox" id="biblioteca">
+                <label class="form-check-label" for=escola>Biblioteca</label><br>
+                <input class="form-check-input" type="checkbox" id="auditorio">
+                <label class="form-check-label" for=escola>Auditório</label><br>
+                <input class="form-check-input" type="checkbox" id="segurança">
+                <label class="form-check-label" for=escola>Segurança</label><br>
+                <input class="form-check-input" type="checkbox" id="alojamento">
+                <label class="form-check-label" for=escola>Alojamento</label><br>
+
+            </div>
+            <div class="col-4">
+                <input class="form-check-input" type="checkbox" id="Refeitório">
+                <label class="form-check-label" for=escola>Refeitório</label><br>
+                <input class="form-check-input" type="checkbox" id="Estacionaento">
+                <label class="form-check-label" for=escola>Estacionamento</label><br>
+                <input class="form-check-input" type="checkbox" id="Salas de reuniões">
+                <label class="form-check-label" for=escola>Salas de reuniões</label><br>
+                <input class="form-check-input" type="checkbox" id="espaco">
+                <label class="form-check-label" for=escola>Espaço de coviniência</label><br>
+                <input class="form-check-input" type="checkbox" id="outros">
+                <label class="form-check-label" for=escola>Outros</label><br>
+            </div>
+
+            <div class="col-4 custom-spacing">
+            <input class="form-check-input" type="checkbox" id="esportiva">
+            <label class="form-check-label" for=escola>Instalações Esportiva</label><br>
+            <input class="form-check-input" type="checkbox" id="recursos">
+            <label class="form-check-label" for=escola>Recursos Tecnológicos</label><br>
+            <input class="form-check-input" type="checkbox" id="acessibilidade">
+            <label class="form-check-label" for=escola>Acessibilidade</label><br>
+            <input class="form-check-input" type="checkbox" id="apoio">
+            <label class="form-check-label" for=escola>Recursos de apoio ao estudante</label><br></div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+                     
+<div class="col-md-5">
+    <div class="row cadastros">
+        <h3>Atividades extracurriculares</h3>
+        <textarea class=form-control rows=6 id=curriculares placeholder="Uma lista de atividades extracurriculares oferecidas pela instituição, como esportes, clubes, grupo de estudos, voluntários, entre outros." required></textarea>
+    </div>
+
+                        <div class='row functs'>
+                            <h5>Por favor, preencha os campos acima com as informações da instituição.<br>Após concluir, envie.</h5>
+                        </div>
+                            
+                        <div class='row functs'>
+
+                            <button type="submit" class="btn btn-green">Enviar</button>
+                        </div>
+ 
+
+
+                </div>
+            </form>
+        </div>
+
+    </body>
+</html>

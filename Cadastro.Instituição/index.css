@@ -1,0 +1,130 @@
+:root {
+  --verde-claro: #0f0;
+--branco: #fff;
+--cinza: #f2f2f2;
+  --roxo: #763DF2;
+--cinza-claro: #fafafa;
+--verde: #0e0;
+--verde-escuro: #0d0;
+  --preto: #000;
+  --laranja: #F25C05;
+	--ciano: #0a8;
+	--roxo-texto: #5932EA;
+
+
+}
+h2, h3 { font-family: "graphie bold", sans-serif; }
+body {
+font-family: 'Montserrat', sans-serif;
+margin: 0rem;
+background-color: var(--cinza);
+}
+.navbar {
+background-color: var(--roxo);
+max-height: 15%;
+width: 100%;
+flex-wrap: nowrap;
+justify-content: flex-end;
+}
+#brand-logo { max-width: 30%; }
+
+a { color: var(--branco); font-size: 80%; }
+a:hover { color: var(--preto); }
+
+h2, .functs { text-align: center; }
+
+h2 { font-size: 170%; padding-top: 3%; }
+
+#id-cad-instituicao { background-color: var(--cinza-claro); margin: 5%; border-radius: 1%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adiciona um efeito de sombra */
+}
+
+#id-cad-instituicao, .col-md-5 { max-width: 90%; }
+
+.form-row, .functs { justify-content: center; margin: 0.1%; }
+
+.col-md-5 { margin: 3% 1% 2% 1%; }
+
+input { margin-bottom: 2%; }
+
+textarea { height: auto; margin-top: 1.5%; }
+
+.niveis { padding-left: 5%; }
+
+.cadastros { margin: 1% 6% 1% 6%; width: 88%; }
+
+button { margin: 10px; overflow: auto; }
+
+.btn-green { background-color: var(--roxo); border-color: var(--roxo); color: #fff;}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  @media only screen and (max-width: 1024px) {
+    margin: 0;
+  }
+}
+
+.checkboxes-row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  
+}
+.alinhado-esquerda {
+  text-align: left;
+}
+
+#tomorrow-space { width: 5rem; margin-left:10px; height: 4rem;  }
+
+#img-tomorrow { height: 0.1rem;  margin-left: 10px;}
+
+
+#texto-roxo { color: var(--roxo-texto); }
+#texto-ciano { color: var(--ciano); }
+#texto-laranja { color: var(--laranja); }
+
+h6 { font-size: 150%; padding-top: 1%; font-weight: bolder; }
+
+#boas-vindas {
+  margin-left: 40px; font-size: 23px;
+
+}
+
+#escola { display: flex;
+  align-items: center
+}
+
+#meulabel {text-align: right;}
+
+.form-control:focus {
+  box-shadow: 0 0 5px rgba(118, 61, 242, 0.7); border-color: rgba(118, 61, 242, 0.7); box-shadow: none; border-width: 2px;
+}
+
+textarea:focus {  box-shadow: 0 0 5px rgba(118, 61, 242, 0.7);   border-color: rgba(118, 61, 242, 0.7); 
+}
+
+.form-row.infraestrutura {margin: 1% 6% 1% 7%;}
+
+.col-7 {
+  margin: 10px; 
+}
+
+.form-row.infraestrutura {
+  margin: 10px; 
+
+}
+
+.row.checkboxes-row {
+  margin: 10px; 
+}
+
+
+  .form-control#outros1 {
+    width: 462px; 
+}
+
+.custom-spacing input,
+.custom-spacing label {
+    margin-right: 1px; 
+}
+
