@@ -56,9 +56,9 @@ h2 { font-size: 170%; padding-top: 3%; }
 
 #texto-roxo { color: var(--roxo-texto); }
 #texto-ciano { color: var(--ciano); }
-#texto-laranja { color: var(--laranja); }
+#texto-laranja { color: var(--laranja); text-align: center;}
 
-h6 { font-size: 130%; padding-top: 1%;  }
+h6 { font-size: 150%; padding-top: 1%; margin-top: 1rem;  }
 
 #boas-vindas {
   margin-left: 10px; font-size: 23px;
