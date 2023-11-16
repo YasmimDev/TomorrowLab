@@ -1,2 +1,0 @@
-# TomorrowLab
-Residência Porto Digital
