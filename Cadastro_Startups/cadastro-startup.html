@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="600">
+
+        <title>TomorrowLab - Cadastro de Startup</title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="startup-styles.css">
+        <script src="startup-script.js"></script>
+    </head>
+    <body>
+        <nav class="navbar startup">
+            <a href="#"><img id=brand-logo src="img/logo-tomorrow2x.png" alt="TomorrowLab Venture Studio."></a>
+            <div class="navbar item">
+                <a class=nav-link href="#"><b>HOME</b></a>
+                <a class=nav-link href="#"><b>PORTFÓLIO</b></a>
+                <a class=nav-link href="#"><b>LOGIN</b></a>
+            </div>
+        </nav>
+        <div class="cad-startup">
+            <div class="row topo">
+                <div class="col-12 col-sm-3 col-md-2 esquerdo">
+                    <div class=row>
+                        <div id=img-tomorrow>
+                            <img id=tomorrow-space src=img/space/tomorrow-space.png alt="Engrenagens, uma lâmpada e um homem flutuando."></div>
+                        <div id=boas-vindas>
+                            <b>Bem-vindo ao<br><span id='texto-ciano'>Tomorrow</span><span id='texto-roxo'>Space</span></b></div>
+                </div></div>
+                <div class="col-12 col-md-7 direito">
+                    <h6><b>Cadastre sua Startup</b></h6></div>
+            </div>
+            <form action="#" method=post id=form-startup>
+                <div class=form-row>
+                    <div class="col-10 col-md-5">
+                        <label for=startup>Nome da startup:</label>
+                        <input class=form-control id="startup" required>
+                        <label for=desc>Descrição:</label>
+                        <textarea class=form-control rows=11 placeholder="Uma breve descrição da startup, informando o que ela faz e sua proposta de valor." id="desc" required></textarea><br>
+                        <label class="form-check-label" for=tecnologia>Setor:</label>
+                        <div class="form-row setor">
+                            <div class="col-5">
+                                <input class="form-check-input" type="checkbox" id="tecnologia">
+                                <label class="form-check-label" for=tecnologia>Tecnologia</label><br>
+                                <input class="form-check-input" type=checkbox id="fintech">
+                                <label class="form-check-label" for=fintech>Fintech</label><br>
+                                <input class="form-check-input" type="checkbox" id="energia">
+                                <label class="form-check-label" for=energia>Energia</label><br>
+                                <input class="form-check-input" type="checkbox" id="e-commerce">
+                                <label class="form-check-label" for=e-commerce>E-commerce</label></div>
+                            <div class="col-6">
+                                <input class="form-check-input" type="checkbox" id="saude">
+                                <label class="form-check-label" for=saude>Saúde</label><br>
+                                <input class="form-check-input" type="checkbox" id="educacao">
+                                <label class="form-check-label" for=educacao>Educação</label><br>
+                                <input class="form-check-input" type="checkbox" id="ali-mobi">
+                                <label class="form-check-label" for=ali-mobi>Alimentos e Agricultura</label><br>
+                                <input class="form-check-input" type="checkbox" id="transp-mobi">
+                                <label class="form-check-label" for=transp-mobi>Transporte e Mobilidade</label></div>
+                        </div>
+                        <label class="form-check-label" for="outros">Outros:</label>
+                        <input class=form-control id="outros">
+                    </div>
+                    <div class="col-10 col-md-5">
+                        <label for=website>Website:</label>
+                        <input class=form-control type="url" id="website">
+                        <label for=email>E-mail:</label>
+                        <input class=form-control type="email" placeholder="seuemail@gmail.com" id="email" required>
+                        <label for=telefone>Telefone:</label>
+                        <input class=form-control type="tel" placeholder="+55 (00) 0 0000-0000" id="telefone" required>
+                        <div class="form-check form-check-inline">
+                            <label class=form-check-label for="endereco1">Tem endereço físico:</label>
+                            <input class=form-check-input type="radio" id=endereco1>
+                            <label class=form-check-label for=endereco1>Sim</label></div>
+                        <div class="form-check form-check-inline">
+                            <input class=form-check-input type="radio" id=endereco2>
+                            <label class=form-check-label for=endereco2>Não</label></div>
+                        <br><br><label for=estado>Estado:</label>
+                        <input class=form-control id="estado">
+                        <label for=cidade>Cidade:</label>
+                        <input class=form-control id="cidade">
+                        <label for=bairro>Bairro:</label>
+                        <input class=form-control id="bairro">
+                        <label for=rua>Rua:</label>
+                        <input class=form-control id="rua">
+                        <label for=cep>CEP:</label>
+                        <input class=form-control type="number" placeholder=00000-00 id="cep"></div>
+                    <div class="row cadastros">
+                        <h3>Fundadores</h3>
+                        <label for=fundador>O nome e sobrenome dos fundadores da startup, bem como informações profissionais anteriores e como eles se conheceram.</label>
+                        <textarea class=form-control rows=6 id=fundador placeholder="Nome do fundador:
+Sobrenome do fundador:
+Responsabilidades:
+Experiência profissional anterior:" required></textarea>
+                        <div id=novo-fundador></div>
+                        <button type=button class="btn btn-secondary btn-all" onclick="adicionarFundador()">Adicionar fundador</button></div>
+                    <div class="row cadastros">
+                        <h3>Investidores</h3>
+                        <label for=investidor>Uma lista dos principais investidores e/ou fontes de financiamento da empresa, incluindo nome, valor inserido, participação na empresa, entre outros:</label>
+                        <textarea class=form-control rows=6 id=investidor 
+                        placeholder="Nome:
+Responsabilidades:
+Valor investido:
+Participação na empresa:
+Entre outros:" required></textarea>
+                        <div id=novo-investidor></div>
+                        <button type=button class="btn btn-secondary btn-all" onclick="adicionarInvestidor()">Adicionar investidor</button></div>
+                    <div class="row cadastros">
+                        <h3>Financimento</h3>
+                        <textarea class=form-control rows=6 id=financiamento placeholder="Informações sobre o financiamento atual da startup, incluindo o motante total do finacimento levantado até o momento, bem como detalhes sobre a rodada de financiamento atual, como o tamanho da rodada, a avaliação pré e pós-dinheiro e qualquer investidores que participaram." required></textarea></div>
+                    <div class="row cadastros">
+                        <h3>Equipe</h3>
+                        <label for=equipe>Uma lista dos membros da equipe da startup, incluindo seus nomes e sobrenomes, cargos, responsabilidades e informações sobre suas experiências profissionais anteriores.</label>
+                        <textarea class=form-control rows=5 id=equipe placeholder="Nome:
+Cargo:
+Responsabilidades:
+Experiência profissional anterior:" required></textarea>
+                        <div id=nova-equipe></div>
+                        <button type=button class="btn btn-secondary btn-all" onclick="adicionarEquipe()">Adicionar equipe</button></div>
+                    <div class="form-row functs">
+                        <h5>Por favor, preencha os campos acima com as informações da startup.<br>Após concluir, envie.</h5>
+                        <div class='row functs'>
+                            <button type="submit" class="btn btn-roxo">Enviar</button>
+                            <button type=reset class="btn btn-secondary">Limpar</button>
+                        </div>
+                    </div>
+                </div>
+            </form></div>
+    </body>
+</html>
