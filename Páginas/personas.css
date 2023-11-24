@@ -26,7 +26,7 @@ p {
 }
 
 .lab {
-    color: #20F087; 
+    color: #66e4a5; 
 }
 
 .logo {
@@ -127,7 +127,7 @@ p {
     background-color: #763DF2;
     text-align: center;
     padding: 10px 10px;
-    border: 1px solid #20F087;
+    border: 1px solid #52e29a;
     border-radius: 40px 0px 0px 0px;
     margin: 15px;
     position: relative;
@@ -201,10 +201,10 @@ p {
     text-align: center;
     position: absolute;
     margin-top: 90%;
-    background-color: #20F087;
+    background-color: #66e4a5;
     width: 250px;
     height: 40px;
-    border: 1px solid #20F087;
+    border: 1px solid #3c976a;
     border-radius: 10px 10px 10px 10px;
     cursor: pointer;
 }
