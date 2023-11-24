@@ -206,6 +206,7 @@ p {
     height: 40px;
     border: 1px solid #20F087;
     border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
 }
 
 #Over-Side button:hover {

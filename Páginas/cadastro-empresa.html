@@ -8,15 +8,15 @@
         <title>TomorrowLab - Cadastro de Empresa</title>
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="empresa.css">
         <script src="empresa.js"></script>
     </head>
     <body>
         <nav class="navbar empresa">
             <a href="#"><img id=brand-logo src="img/logo-tomorrow2x.png" alt="TomorrowLab Venture Studio."></a>
             <div class="navbar item">
-                <a class=nav-link href="#"><b>HOME</b></a>
-                <a class=nav-link href="#"><b>PORTFÓLIO</b></a>
+                <a class=nav-link href="home.html"><b>HOME</b></a>
+                <a class=nav-link href="Personas.html"><b>CADASTRE-SE</b></a>
                 <a class=nav-link href="#"><b>LOGIN</b></a>
             </div>
         </nav>
@@ -25,7 +25,7 @@
                 <div class="col-4 col-sm-4 col-lg-4 col-xl-4 esquerdo">
                     <div class=row>
                         <div id=img-tomorrow>
-                            <img id=tomorrow-space src=img/space.png alt="Engrenagens e uma lâmpada."></div>
+                            <img id=tomorrow-space src="img/space/tomorrow-space.png" alt="Engrenagens e uma lâmpada."></div>
                         <div id=boas-vindas>
                             <b>Bem-vindo ao</b><br><span id='texto-ciano'><b>Tomorrow</b></span><span id='texto-roxo'><b>Space</b></span></div>
                 </div></div>
@@ -193,7 +193,7 @@ Entre outros:" required></textarea>
                     <div class="form-row functs">
                         <h5>Por favor, preencha os campos acima com as informações da empresa.<br>Após concluir, envie.</h5><br>
                         <div class='row functs'>
-                            <button type="submit" class="btn btn-green">Enviar</button>
+                            <button type="submit" formaction="agradecimento.html"  class="btn btn-green">Enviar</button>
                             <button type=reset class="btn btn-secondary">Limpar</button>
                             <button class="btn btn-sm btn-primary rounded-circle position-fixed bottom-0 end-0 translate-middle d-none" onclick="scrollToTop()" id="back-to-up">
                                 <i class="fa fa-arrow-up" aria-hidden="true"></i>
