@@ -154,7 +154,7 @@ header .navegation li a{
 .boxImg {
     position: fixed;
     right: 20px;
-    left: 57%; /* Alterado de 'right' para 'left' */
+    left: 62%; /* Alterado de 'right' para 'left' */
     bottom: 0rem;
 
 }
