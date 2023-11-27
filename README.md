@@ -1,6 +1,7 @@
 # TomorrowLab
 ## Residência Porto Digital
 ![TomorrowLab](./Páginas/img/logo-tomorrow-cor2x%20(2).png)
+
 Criação de uma plataforma de cadastro para captação de players proporcionando maior visibilidade para o desenvolvimento de ideias e soluções inovadoras, gerando parcerias e conexões tecnológicas.
 
 ## Índice 
