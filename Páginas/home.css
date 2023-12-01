@@ -3,7 +3,6 @@
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    
 }
 
 
@@ -11,13 +10,12 @@ section{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100px;
+    padding: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
     background: url('img/foto..jpg') center/cover no-repeat;
-
 }
 
 .circle{
@@ -27,22 +25,21 @@ section{
     width: 100%;
     height: 100%;
     background: #763df2;
-    clip-path: circle(52% at bottom right);
-
+    clip-path: circle(50% at bottom right);
 }
+
 header{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 40px 100px;
+    max-width: 100%;
+    padding: 40px 95%;
     display: flex;
     align-items: center;
-    justify-content: space-between;  
+    justify-content: flex-end;
 }
 
 header .logo{
-  
     position: relative;
     max-width: 150px;
     margin-left: 260px; 
@@ -62,7 +59,7 @@ header .navegation li a{
     font-weight: 500;
     text-decoration: none;
     font-size: 19px;
-    margin-left: 100px;
+    margin-left: 3.5rem;
 }
 .content{
     position: relative;
@@ -152,15 +149,37 @@ header .navegation li a{
 }
 
 .boxImg {
-    position: fixed;
+    position: absolute;
     right: 20px;
     left: 62%; /* Alterado de 'right' para 'left' */
     bottom: -0.3rem;
-
 }
+.img1 { width: 58%; }
 
-.img1 {
-    width: 60%;
-    height: 50%;
+@media (min-width: 2300px) {
+    header { padding-left: 78%; }
+    .circle { clip-path: circle(52.5% at bottom right); }
 }
-
+@media (max-width: 1057px) {
+    .boxImg { left: 70%; }
+    .img1 { width: 50%; }
+    .circle { clip-path: circle(40% at bottom right); }
+}
+@media (max-width: 850px) {
+    header .navegation li a { margin-left: 0.7rem; }
+    .content .text h2 { font-size: 2.5em; }
+    .img1 { width: 43.5%; }
+    .circle { clip-path: circle(35% at bottom right); }
+}
+@media (max-width: 500px) { .circle { clip-path: circle(30.5% at bottom right); } }
+@media (max-width: 450px) {
+    header { padding-left: 100% }
+    header .logo { max-width: 120px; }
+    .content .text h2 { font-size: 1.6em; }
+    .circle { clip-path: circle(30% at bottom right); }
+}
+@media (max-width: 350px) {
+    header { padding-left: 100% }
+    .content .text h2 { font-size: 1.6em; }
+    .circle { clip-path: circle(24% at bottom right); }
+}
