@@ -7,19 +7,19 @@
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 7.8vw;
     color: #ffffff;
     text-align: center;
 }
 
 h2{
-    font-size: 25px;
+    font-size: 5vw;
     color: #ffffff;
     text-align: center;
 }
 
 p {
-    font-size: 22px;
+    font-size: 4.5vw;
     color: #ffffff;
     margin: 40px  40px ;
     text-align: center;
@@ -90,7 +90,7 @@ p {
 }
 
 #Personas-Main {
-    padding: 40px 80px;
+    padding: 5%;
     background-image:  url("img/capa.webp");
     background-position: top 30% right 0px;
     background-size: cover;
@@ -202,7 +202,7 @@ p {
     position: absolute;
     margin-top: 90%;
     background-color: #66e4a5;
-    width: 250px;
+    width: 90%;
     height: 40px;
     border: 1px solid #3c976a;
     border-radius: 10px 10px 10px 10px;
@@ -212,4 +212,12 @@ p {
 #Over-Side button:hover {
     transform: scale(1.05);
     transition: all 0.5s;
-  } 
+}
+
+@media (min-width: 1800px ) { h1 { font-size: 6vw;} h2 { font-size: 1vw } p { font-size: 1.15vw } }
+@media (max-width: 1800px ) { h2 { font-size: 1.5vw } p { font-size: 1.8vw } }
+@media (max-width: 1100px ) { h2 { font-size: 3vw } p { font-size: 2.7vw } }
+@media (max-width: 450px ) {
+    #Over-Side { flex-direction: column-reverse }
+    h2 { font-size: 5vw }
+    p { font-size: 5vw } }
