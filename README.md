@@ -11,6 +11,9 @@ Criação de uma plataforma de cadastro para captação de players proporcionand
 
 - <a href="#-tecnologias utilizadas">Pessoas autoras<a>
 
+- <a href="#-Site">Site<a>
+
+
 
 ## 💻Funcionalidades do Projeto
 - [x] Tela de Home
@@ -81,7 +84,7 @@ Criação de uma plataforma de cadastro para captação de players proporcionand
 ### Tela de Agradecimento
 - É exibido uma tela de agradecimento pelo cadastro enviado. 
 - O usuário pode voltar a tela inicial ao clicar em "Retornar à página inicial" 
-- Também é exibido redes sociais disponíveis da Empresa ToorrowLab
+- Também é exibido redes sociais disponíveis da Empresa TomorrowLab
 
 ![Agradecimento](./Páginas/img/TELA.AGRADECIMENTO.png)
 
@@ -93,6 +96,10 @@ Criação de uma plataforma de cadastro para captação de players proporcionand
 ![GitHub](https://img.shields.io/badge/-GitHub-0D1117?style=for-the-badge&logo=github&labelColor=0D1117)&nbsp;
 ![Git](https://img.shields.io/badge/-Git-0D1117?style=for-the-badge&logo=git&labelColor=0D1117)&nbsp;
 
+
+## 🌐 Site 
+
+[Site](https://tomorrowlab.studio/portodigital/)
 
 ## 📌Pessoas Autoras
 
