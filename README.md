@@ -99,7 +99,7 @@ Criação de uma plataforma de cadastro para captação de players proporcionand
 
 ## 🌐 Site 
 
-[Site](https://tomorrowlab.studio/portodigital/)
+[tomorrowlab.studio/portodigital](https://tomorrowlab.studio/portodigital/)
 
 ## 📌Pessoas Autoras
 
